@@ -1,7 +1,8 @@
-import {Box, Drawer, AppBar, Toolbar, ListItemText, ListItemButton, ListItemIcon, List, Avatar, SvgIcon, BottomNavigation, BottomNavigationAction, Paper, Typography} from '@mui/material';
+import {Box, Drawer, AppBar, Toolbar, ListItemText, ListItemButton, ListItemIcon, List, Avatar, SvgIcon, BottomNavigation, BottomNavigationAction, Paper, Typography, IconButton} from '@mui/material';
 import {useState} from 'react'
 import {Route, Routes, HashRouter, Link} from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import * as Icons from '@mui/icons-material';
 import CssBaseline from '@mui/material/CssBaseline';
 import logo from './assets/logo.svg'
 import Home from './components/Home.tsx'
@@ -89,7 +90,12 @@ export default function App() {
                     </Paper>
 
                     <Drawer anchor='bottom' open={userDrawerState} onClose={toggleUserDrawer(false)}>
-                        <List></List>
+                        <Box sx={{height: window.innerHeight}}>
+                            <Toolbar>
+                                <Avatar></Avatar>
+                                <IconButton onClick={toggleUserDrawer(false)} style={{marginLeft: 'auto'}}><Icons.Close/></IconButton>
+                            </Toolbar>
+                        </Box>
                     </Drawer>
             </ThemeProvider>
         </HashRouter>
