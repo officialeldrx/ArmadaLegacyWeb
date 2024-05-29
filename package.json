@@ -1,7 +1,11 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.18",
+    "@mui/material": "^5.15.18",
     "firebase": "^10.12.1",
-    "jquery": "^3.7.1"
+    "hamburger-react": "^2.5.1",
+    "react-router-dom": "^6.23.1"
   }
 }
