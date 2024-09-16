@@ -33,12 +33,12 @@ function MultiSelect({ options, selected, onChange, placeholder }: { options: an
     return (
         <div className="relative flex-1" ref={ref}>
             <button
-                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-left bg-card border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2"
+                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-left bg-background border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2"
             >
                 <span>{selected.length > 0 ? `${selected.length} selected` : placeholder}</span>
                 <ChevronDown className="h-4 w-4 text-gray-500" />
             </button>
-            <div className={`absolute z-10 mt-1 bg-card border rounded-md shadow-lg ${isOpen ? "block" : "invisible"} min-w-fit w-full`}>
+            <div className={`absolute z-10 mt-1 bg-background border rounded-md shadow-lg ${isOpen ? "block" : "invisible"} min-w-fit w-full`}>
                 {options.map((option: any) => (
                     <label key={option.value} className="flex items-center px-4 py-2 text-nowrap">
                         <input
@@ -158,7 +158,7 @@ export function FilteredTable() {
                                                     rel="noopener noreferrer"
                                                     className="text-blue-500 cursor-pointer block"
                                                 >
-                                                    &bull; {item.name}
+                                                    - {item.name}
                                                 </a>
                                             </div>
                                         ))}
