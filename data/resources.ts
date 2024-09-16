@@ -21,7 +21,7 @@ const resources: Entity[] = [
         name: "Acclamator Assault Ship",
         category: "Ship",
         faction: ["Republic"],
-        image: "",
+        image: "https://cdnb.artstation.com/p/assets/images/images/022/676/681/large/lukasz-jaskolski-acclamator-class-assault-ship.jpg?1576276890",
         items: [
             {
                 type: "Free STL",
@@ -59,7 +59,7 @@ const resources: Entity[] = [
         name: "Arquitens Light Cruiser",
         category: "Ship",
         faction: ["Empire"],
-        image: "",
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/48/57/485714c0-57ee-4d51-a744-bd8bbf96cc97/swm22_preview.jpg",
         items: [
             {
                 type: "Free STL",
@@ -107,7 +107,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/c70-class-charger-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -135,7 +135,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/pelta-class-frigate-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
         ],
     },
@@ -153,7 +153,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/venator-class-star-destroyer-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -247,7 +247,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/gozanti-class-cruiser-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Paid STL",
@@ -275,7 +275,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/munificent-class-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -303,7 +303,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/providence-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -326,7 +326,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/recusant-class-light-destroyer-stlarmada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -391,7 +391,7 @@ const resources: Entity[] = [
     {
         name: "Assault Frigate Mark II",
         category: "Ship",
-        image: "",
+        image: "https://lh6.googleusercontent.com/proxy/mim2NZOaCz-v2shMInsrZN9jsiblwJpDMy-KfIWEI857Cfs1FxDpsGRfBuMEDaaf4SExnkaFXwKkyStFcBnJv86aPOyxWZdqMI6uCbmCEE5eyZmXn-VTFJEA",
         items: [
             {
                 type: "Free STL",
@@ -488,7 +488,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/mc75-class-stl-kopie/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -659,7 +659,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/raider-class-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -682,12 +682,12 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/imperial-star-destroyer-class-i-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/imperial-star-destroyer-class-ii-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Paid STL",
@@ -741,7 +741,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/immobilizer-418-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -784,7 +784,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/executor-class-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
         ],
     },
@@ -803,7 +803,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/belbullab-22-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
         ],
     },
@@ -846,7 +846,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/hyena-droid-bomber-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -875,7 +875,7 @@ const resources: Entity[] = [
     //     {
     //       type: "Paid STL",
     //       url: "https://resinengine.com/product/nantex-class-stl/",
-    //       name: "ResinEngine",
+    //       name: "Ethan LeRoith",
     //     },
     //     {
     //       type: "Product",
@@ -904,7 +904,7 @@ const resources: Entity[] = [
     //     {
     //       type: "Paid STL",
     //       url: "https://resinengine.com/product/rouge-class-stl/",
-    //       name: "ResinEngine",
+    //       name: "Ethan LeRoith",
     //     },
     //   ],
     // },
@@ -961,7 +961,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/vulture-droid-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -979,8 +979,7 @@ const resources: Entity[] = [
         name: "ARC-170",
         category: "Squadron",
         faction: ["Republic"],
-        image: "",
-        description: "",
+        image: "https://cdnb.artstation.com/p/assets/images/images/014/655/401/large/daniel-jimenez-villalba-arc-170-starfighter.jpg?1544878975&dl=1",
         items: [
             {
                 type: "Free STL",
@@ -990,7 +989,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/arc-170-squadrons-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -1029,7 +1028,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/clone-y-wing-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
         ],
     },
@@ -1043,7 +1042,7 @@ const resources: Entity[] = [
     //       {
     //         type: "Paid STL",
     //         url: "https://resinengine.com/product/z-95-squad-stl/",
-    //         name: "ResinEngine",
+    //         name: "Ethan LeRoith",
     //       },
     //       {
     //         type: "Product",
@@ -1077,7 +1076,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/delta-7-aethersprite-class-light-interceptor-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -1101,7 +1100,7 @@ const resources: Entity[] = [
     //       {
     //         type: "Paid STL",
     //         url: "https://resinengine.com/product/eta-2-actis-class-interceptor-stl-armada/",
-    //         name: "ResinEngine",
+    //         name: "Ethan LeRoith",
     //       },
     //       {
     //         type: "Product",
@@ -1144,7 +1143,7 @@ const resources: Entity[] = [
     //       {
     //         type: "Paid STL",
     //         url: "https://resinengine.com/product/laat-atmo-space-stl/",
-    //         name: "ResinEngine",
+    //         name: "Ethan LeRoith",
     //       },
     //       {
     //         type: "Product",
@@ -1173,7 +1172,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/v19-torrent-stl-armada/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
         ],
     },
@@ -1206,7 +1205,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/lambda-stl-kopie/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
         ],
     },
@@ -1220,7 +1219,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/tie-adv-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
         ],
     },
@@ -1234,7 +1233,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/tie-bomber-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -1258,7 +1257,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/tie-defender-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
         ],
     },
@@ -1277,7 +1276,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/tie-ln-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -1301,7 +1300,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/tie-interceptor-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -1341,13 +1340,12 @@ const resources: Entity[] = [
         name: "A-wing",
         category: "Squadron",
         faction: ["Rebel"],
-        image: "",
-        description: "",
+        image: "https://preview.redd.it/concept-art-by-ralph-mcquarrie-of-a-beautiful-blue-a-wing-v0-8e7p9gtpqye81.jpg?width=1080&crop=smart&auto=webp&s=49be5c842a81d6f55e09579aa8e26dfb2d0cfbd0",
         items: [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/a-wing-squadrons-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -1420,7 +1418,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/x-wing-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -1454,7 +1452,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/y-wing-stl/",
-                name: "ResinEngine",
+                name: "Ethan LeRoith",
             },
             {
                 type: "Product",
@@ -1860,7 +1858,7 @@ const resources: Entity[] = [
     {
         name: "Aggressor",
         category: "Squadron",
-        image: "",
+        image: "https://spikeybits.com/wp-content/uploads/2018/12/IG2000-XWM-e1456876264955.jpg",
         items: [],
         description: "No models available at this time"
     },

@@ -3,6 +3,7 @@
 import React, { useState, useMemo, useRef, useEffect } from "react"
 import { Input } from "@/components/ui/input"
 import { Faction, Category, Item, Entity, resources } from '@/data/resources'
+import Image from 'next/image'
 import { ChevronDown, Search } from "lucide-react"
 
 // Basic MultiSelect component
@@ -33,12 +34,12 @@ function MultiSelect({ options, selected, onChange, placeholder }: { options: an
     return (
         <div className="relative flex-1" ref={ref}>
             <button
-                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-left bg-background border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2"
+                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-left bg-card border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2"
             >
                 <span>{selected.length > 0 ? `${selected.length} selected` : placeholder}</span>
                 <ChevronDown className="h-4 w-4 text-gray-500" />
             </button>
-            <div className={`absolute z-10 mt-1 bg-background border rounded-md shadow-lg ${isOpen ? "block" : "invisible"} min-w-fit w-full`}>
+            <div className={`absolute z-10 mt-1 bg-card border rounded-md shadow-lg ${isOpen ? "block" : "invisible"} min-w-fit w-full`}>
                 {options.map((option: any) => (
                     <label key={option.value} className="flex items-center px-4 py-2 text-nowrap">
                         <input
@@ -106,7 +107,7 @@ export function FilteredTable() {
                         placeholder="Search..."
                         value={searchFilter}
                         onChange={(e) => setSearchFilter(e.target.value)}
-                        className="w-full pl-8 pr-4 py-2 h-fit text-base"
+                        className="w-full pl-8 pr-4 py-2 h-fit text-base bg-card"
                     />
                     <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
                 </div>
@@ -134,12 +135,13 @@ export function FilteredTable() {
             <div className="flex-grow overflow-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {filteredEntities.map((entity) => (
-                        <div key={entity.name} className="border rounded-lg shadow-sm p-4 bg-card">
+                        <div key={entity.name} className="border rounded-lg shadow-sm bg-card">
                             <div className="mb-4">
-                                <div className="font-bold text-lg">{entity.name}</div>
-                                <div className="text-gray-600">Category: {entity.category}</div>
-                                <div className={`text-gray-600 ${!entity.faction ? 'hidden' : ''}`}>Faction: {entity.faction?.join(", ") || "N/A"}</div>
-                                <div className={`text-gray-600 ${!entity.description ? 'hidden' : ''}`}>Note: {entity.description}</div>
+                                <div className="font-bold text-2xl px-4 pt-2 pb-1">{entity.name}</div>
+                                {entity.image ? <img src={entity.image} alt="" style={{width: '100%', height: 280, objectFit: 'cover'}}/> : null}
+                                <div className="text-gray-600 px-4 pt-2">Category: {entity.category}</div>
+                                <div className={`text-gray-600 px-4 ${!entity.faction ? 'hidden' : ''}`}>Faction: {entity.faction?.join(", ") || "N/A"}</div>
+                                <div className={`text-gray-600 px-4 ${!entity.description ? 'hidden' : ''}`}>Note: {entity.description}</div>
                                 {/* <div className="text-gray-600">Expansion: {entity.expansion || "N/A"}</div> */}
                             </div>
 
@@ -148,7 +150,7 @@ export function FilteredTable() {
                                 if (itemsOfType.length === 0) return null;
 
                                 return (
-                                    <div key={`${entity.name}-${type}`} className="mb-2">
+                                    <div key={`${entity.name}-${type}`} className="mb-2 px-4">
                                         <div className="font-semibold mb-1">{type}</div>
                                         {itemsOfType.map((item, index) => (
                                             <div key={index}>

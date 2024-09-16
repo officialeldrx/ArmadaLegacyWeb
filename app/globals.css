@@ -4,8 +4,8 @@
 
 @layer base {
     :root {
-        --background: #f9f9f9;
-        --foreground: #171717;
+        --background: 0 0% 98.5%;
+        --foreground: 0 0% 1%;
         --card: 0 0% 100%;
         --card-foreground: 222.2 84% 4.9%;
         --popover: 0 0% 100%;
@@ -61,11 +61,11 @@
             --invert: invert(100%);
         }
     }
+}
 
 body {
-    color: var(--foreground);
-    background: var(--background);
-}
+    color: hsl(var(--foreground));
+    background: hsl(var(--background));
 }
 
 @layer utilities {
