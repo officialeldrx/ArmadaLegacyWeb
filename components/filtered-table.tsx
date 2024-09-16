@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState, useMemo, useRef, useEffect } from "react"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Input } from "@/components/ui/input"
 import { Faction, Category, Item, Entity, resources } from '@/data/resources'
 import { ChevronDown, Search } from "lucide-react"

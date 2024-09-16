@@ -3,14 +3,12 @@
 import * as React from "react"
 import { Menu } from "lucide-react"
 import Link from "next/link"
-
+import Logo from "@/components/logo.svg"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const navigationItems = [
-    { title: "Home", href: "/" },
-    { title: "About", href: "/about" },
-    { title: "Services", href: "/services" },
-    { title: "Contact", href: "/contact" },
+    { title: "Resources", href: "/" },
 ]
 
 export function NavigationDrawer() {
@@ -29,15 +27,17 @@ export function NavigationDrawer() {
 
     return (
         <>
-            <div className="w-full bg-card flex gap-4 p-4 sticky top-0 z-10 border-b">
+            <div className="w-full bg-card flex gap-4 p-2 sticky top-0 z-10 border-b">
                 <Button
                     variant="ghost"
                     size="icon"
                     onClick={toggleDrawer}
                     aria-label="Open navigation menu"
+                    className="p-2"
                 >
                     <Menu className="h-6 w-6" />
                 </Button>
+
             </div>
             <div
                 className={`fixed inset-0 bg-black/50 z-30 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
@@ -53,8 +53,8 @@ export function NavigationDrawer() {
                 role="dialog"
                 aria-modal="true"
             >
-                <div className="p-4 border-b">
-                    <h2 className="text-lg font-semibold">Navigation</h2>
+                <div className="py-8 px-16 border-b">
+                    <Image src={Logo} alt="" className="invert"/>
                 </div>
                 <nav className="px-4 py-2">
                     <ul className="space-y-2">

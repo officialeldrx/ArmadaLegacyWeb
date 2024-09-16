@@ -30,6 +30,7 @@
         --chart-4: 43 74% 66%;
         --chart-5: 27 87% 67%;
         --radius: 0rem;
+        --invert: invert(0);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -60,6 +61,7 @@
             --chart-3: 30 80% 55%;
             --chart-4: 280 65% 60%;
             --chart-5: 340 75% 55%;
+            --invert: invert(100%);
         }
     }
 }
@@ -70,6 +72,10 @@
 }
 
 @layer utilities {
+    .invert{
+        filter: var(--invert);
+    }
+
     .text-balance {
         text-wrap: balance;
     }
