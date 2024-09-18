@@ -4,7 +4,7 @@
 
 @layer base {
     :root {
-        --background: 0 0% 98.5%;
+        --background: 0 0% 95%;
         --foreground: 0 0% 1%;
         --card: 0 0% 100%;
         --card-foreground: 222.2 84% 4.9%;
@@ -28,13 +28,13 @@
         --chart-3: 197 37% 24%;
         --chart-4: 43 74% 66%;
         --chart-5: 27 87% 67%;
-        --radius: 0rem;
+        --radius: 1rem;
         --invert: invert(0);
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --background: 222.2 84% 4.9%;
+            --background: 222.2 84% 2%;
             --foreground: 210 40% 98%;
             --card: 222.2 50% 8%;
             --card-foreground: 210 40% 98%;
@@ -64,8 +64,17 @@
 }
 
 body {
+    font-family: var(--optima);
     color: hsl(var(--foreground));
     background: hsl(var(--background));
+}
+
+h1, h2, h3, h4, h5{
+    font-family: var(--title);
+}
+
+h6{
+    font-family: var(--fighter);
 }
 
 @layer utilities {

@@ -62,7 +62,7 @@ export function NavigationDrawer() {
                             <li key={item.title}>
                                 <Link
                                     href={item.href}
-                                    className="block py-2 px-4 text-lg hover:bg-accent hover:text-accent-foreground rounded-md transition-colors"
+                                    className="block py-2 px-4 text-lg hover:bg-accent hover:text-accent-foreground rotransition-colors"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.title}

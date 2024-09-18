@@ -34,12 +34,12 @@ function MultiSelect({ options, selected, onChange, placeholder }: { options: an
     return (
         <div className="relative flex-1" ref={ref}>
             <button
-                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-left bg-card border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2"
+                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-left bg-card border shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2"
             >
                 <span>{selected.length > 0 ? `${selected.length} selected` : placeholder}</span>
                 <ChevronDown className="h-4 w-4 text-gray-500" />
             </button>
-            <div className={`absolute z-10 mt-1 bg-card border rounded-md shadow-lg ${isOpen ? "block" : "invisible"} min-w-fit w-full`}>
+            <div className={`absolute z-10 mt-1 bg-card border shadow-lg ${isOpen ? "block" : "invisible"} min-w-fit w-full`}>
                 {options.map((option: any) => (
                     <label key={option.value} className="flex items-center px-4 py-2 text-nowrap">
                         <input
@@ -135,11 +135,11 @@ export function FilteredTable() {
             <div className="flex-grow overflow-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {filteredEntities.map((entity) => (
-                        <div key={entity.name} className="border rounded-lg shadow-sm bg-card">
+                        <div key={entity.name} className="shadow-md rounded-lg overflow-clip bg-card pb-1">
                             <div className="mb-4">
-                                <div className="font-bold text-2xl px-4 pt-2 pb-1">{entity.name}</div>
                                 {entity.image ? <img src={entity.image} alt="" style={{width: '100%', height: 280, objectFit: 'cover'}}/> : null}
-                                <div className="text-gray-600 px-4 pt-2">Category: {entity.category}</div>
+                                <h1 className="px-4 text-3xl pt-3 pb-1">{entity.name}</h1>
+                                <div className="text-gray-600 px-4">Category: {entity.category}</div>
                                 <div className={`text-gray-600 px-4 ${!entity.faction ? 'hidden' : ''}`}>Faction: {entity.faction?.join(", ") || "N/A"}</div>
                                 <div className={`text-gray-600 px-4 ${!entity.description ? 'hidden' : ''}`}>Note: {entity.description}</div>
                                 {/* <div className="text-gray-600">Expansion: {entity.expansion || "N/A"}</div> */}
@@ -151,7 +151,7 @@ export function FilteredTable() {
 
                                 return (
                                     <div key={`${entity.name}-${type}`} className="mb-2 px-4">
-                                        <div className="font-semibold mb-1">{type}</div>
+                                        <h6 className="mb-1">{type}</h6>
                                         {itemsOfType.map((item, index) => (
                                             <div key={index}>
                                                 <a
@@ -160,7 +160,7 @@ export function FilteredTable() {
                                                     rel="noopener noreferrer"
                                                     className="text-blue-500 cursor-pointer block"
                                                 >
-                                                    - {item.name}
+                                                    {item.name}
                                                 </a>
                                             </div>
                                         ))}
