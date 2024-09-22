@@ -1,8 +1,8 @@
 type Faction = "Empire" | "Republic" | "Separatist" | "Rebel";
-type Category = "Ship" | "Squadron" | "Play Material";
+type Category = "Ship" | "Squadron" | "Play Material" | "Service";
 
 interface Item {
-    type: "Free STL" | "Paid STL" | "Product";
+    type: "Free STL" | "Paid STL" | "Model" | "Card" | "Base Token" | "Product";
     url: string;
     name: string;
 }
@@ -59,7 +59,7 @@ const resources: Entity[] = [
         name: "Arquitens Light Cruiser",
         category: "Ship",
         faction: ["Empire"],
-        image: "https://images-cdn.fantasyflightgames.com/filer_public/48/57/485714c0-57ee-4d51-a744-bd8bbf96cc97/swm22_preview.jpg",
+        image: "https://i.pinimg.com/736x/bd/ae/f8/bdaef8b5cc138592ad69901bcd6266cd.jpg",
         items: [
             {
                 type: "Free STL",
@@ -97,7 +97,7 @@ const resources: Entity[] = [
         name: "Consular Cruiser",
         category: "Ship",
         faction: ["Republic"],
-        image: "",
+        image: "https://diceandcardboard.com/content/images/2021/05/swm34_preview3.jpeg",
         items: [
             {
                 type: "Free STL",
@@ -125,7 +125,7 @@ const resources: Entity[] = [
         name: "Pelta Frigate",
         category: "Ship",
         faction: ["Republic", "Rebel"],
-        image: "",
+        image: "https://scontent-msp1-1.xx.fbcdn.net/v/t1.6435-9/54730029_10157037493628419_5949489741819805696_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=qnkkRhKQaoMQ7kNvgEPCaXl&_nc_ht=scontent-msp1-1.xx&_nc_gid=AjrStbRdUuJXB6viGMimxJ4&oh=00_AYDOaeuRpHRvnsziaNqLmUFABfms5CAqvqxDet2UyFu5nQ&oe=67179FDB",
         items: [
             {
                 type: "Free STL",
@@ -143,7 +143,7 @@ const resources: Entity[] = [
         name: "Venator Star Destroyer",
         category: "Ship",
         faction: ["Empire", "Republic"],
-        image: "",
+        image: "https://artistmonkeys.com/wp-content/uploads/2021/10/Venator-class-Star-Destroyer-1.jpg",
         items: [
             {
                 type: "Free STL",
@@ -171,7 +171,7 @@ const resources: Entity[] = [
         name: "Victory Star Destroyer",
         category: "Ship",
         faction: ["Empire", "Republic"],
-        image: "",
+        image: "https://www.belloflostsouls.net/wp-content/uploads/2021/09/victory-ii-warlord.jpg",
         items: [
             {
                 type: "Free STL",
@@ -219,7 +219,7 @@ const resources: Entity[] = [
         name: "Hardcell Transport",
         category: "Ship",
         faction: ["Separatist"],
-        image: "",
+        image: "https://preview.redd.it/stat-that-ship-hardcell-class-interstellar-transport-v0-l79shd9tquia1.png?width=640&crop=smart&auto=webp&s=db184dd8ca7155a617b5c7ab5bd7f762c2f52604",
         items: [
             {
                 type: "Free STL",
@@ -237,7 +237,7 @@ const resources: Entity[] = [
         name: "Gozanti Assault Carriers",
         category: "Ship",
         faction: ["Separatist", "Empire"],
-        image: "",
+        image: "https://lumiere-a.akamaihd.net/v1/images/image_c5bf105d.jpeg?region=0%2C0%2C1920%2C1080",
         items: [
             {
                 type: "Free STL",
@@ -270,7 +270,7 @@ const resources: Entity[] = [
         name: "Munificent Frigate",
         category: "Ship",
         faction: ["Separatist"],
-        image: "",
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/f0/df/f0df3dca-e532-4e55-afb5-901d2df428f3/swm35_preview2.jpg",
         items: [
             {
                 type: "Paid STL",
@@ -293,7 +293,7 @@ const resources: Entity[] = [
         name: "Providence Dreadnaught",
         category: "Ship",
         faction: ["Separatist", "Rebel"],
-        image: "",
+        image: "https://external-preview.redd.it/btHHeguzPtGu6_pZc1f9Q0tGESI5xtypmwCfzKebAv8.jpg?width=640&crop=smart&auto=webp&s=4d9b81dd01aebe13ffb04345f44ee9f7b44a2877",
         items: [
             {
                 type: "Free STL",
@@ -321,7 +321,7 @@ const resources: Entity[] = [
         name: "Recusant Destroyer",
         category: "Ship",
         faction: ["Separatist"],
-        image: "",
+        image: "https://external-preview.redd.it/recusant-class-light-destroyer-by-ferenc-patk%C3%B3s-v0-dtxpISb5eFgXtf82CdeHwbRN4g9Rai6eXcJ9JR75PMo.jpg?auto=webp&s=746ec51fa296d0c3b55e7ee36c3d8cad22b04ef6",
         items: [
             {
                 type: "Paid STL",
@@ -424,7 +424,7 @@ const resources: Entity[] = [
         name: "CR90 Corvette",
         category: "Ship",
         faction: ["Rebel"],
-        image: "",
+        image: "https://swrpggm.com/wp-content/uploads/2021/02/CorellianCR90_FE.png",
         items: [
             {
                 type: "Free STL",
@@ -447,7 +447,7 @@ const resources: Entity[] = [
         name: "Hammerhead Corvette",
         category: "Ship",
         faction: ["Rebel"],
-        image: "",
+        image: "https://lumiere-a.akamaihd.net/v1/images/hammerhead-corvette-rogue-update_453ce60b.jpeg?region=154%2C0%2C892%2C502",
         items: [
             {
                 type: "Free STL",
@@ -465,7 +465,7 @@ const resources: Entity[] = [
         name: "MC30c Frigate",
         category: "Ship",
         faction: ["Rebel"],
-        image: "",
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/ff/3a/ff3abcff-d6ad-4cd1-b38b-e62fd3f01bea/swm12_preview.jpg",
         items: [
             {
                 type: "Free STL",
@@ -483,7 +483,7 @@ const resources: Entity[] = [
         name: "MC75 Profundity",
         category: "Ship",
         faction: ["Rebel"],
-        image: "",
+        image: "https://pbs.twimg.com/media/FOtla6YWYAYqfFL.jpg:large",
         items: [
             {
                 type: "Paid STL",
@@ -501,7 +501,7 @@ const resources: Entity[] = [
         name: "MC80 Home One",
         category: "Ship",
         faction: ["Rebel"],
-        image: "",
+        image: "https://lumiere-a.akamaihd.net/v1/images/home-one-main_784f4f9b.jpeg?region=207%2C1%2C1606%2C803",
         items: [
             {
                 type: "Free STL",
@@ -529,7 +529,7 @@ const resources: Entity[] = [
         name: "MC80 Liberty",
         category: "Ship",
         faction: ["Rebel"],
-        image: "",
+        image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/419fa4cc-f4d6-4a6d-999a-e7c6a5eebd8e/d9axrld-b143ead5-e849-4052-9c37-e3b33bf4c3fa.jpg/v1/fill/w_900,h_735,q_75,strp/mc80_liberty_type_cruiser_by_anthonydevine_d9axrld-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM1IiwicGF0aCI6IlwvZlwvNDE5ZmE0Y2MtZjRkNi00YTZkLTk5OWEtZTdjNmE1ZWViZDhlXC9kOWF4cmxkLWIxNDNlYWQ1LWU4NDktNDA1Mi05YzM3LWUzYjMzYmY0YzNmYS5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.pDuRoTYLR_6PnSTxTXPTX3mriKMmOkciTpgF5zGd5rA",
         items: [
             {
                 type: "Free STL",
@@ -562,7 +562,7 @@ const resources: Entity[] = [
         name: "Nebulon-B Frigate",
         category: "Ship",
         faction: ["Rebel"],
-        image: "",
+        image: "https://i.pinimg.com/originals/f5/9b/f1/f59bf13217a478239879291ce21fb8c0.jpg",
         items: [
             {
                 type: "Free STL",
@@ -582,23 +582,24 @@ const resources: Entity[] = [
         ],
     },
     {
-        name: "Rebel GR-75 Transports",
+        name: "GR-75 Transports",
         category: "Ship",
         faction: ["Rebel"],
-        image: "",
+        image: "https://scontent-msp1-1.xx.fbcdn.net/v/t1.6435-9/116925120_1208753406168014_4251484944394060228_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd6889&_nc_ohc=CEwKaGzXGD4Q7kNvgEfGUl8&_nc_ht=scontent-msp1-1.xx&_nc_gid=AfhHEdFIU5nC5an1_jfNHa1&oh=00_AYCrK-ch_0djTN6m8nHdo-FAuMduCBeBJIvnDfo_1Be-Wg&oe=6717A7DE",
         items: [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671437",
                 name: "Armada_Legacy",
             },
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/gr-75-rebel-transport-star-wars-armada-miniman13", name: "Tev'an shipyards" }
         ],
     },
     {
         name: "Starhawk Battleship",
         category: "Ship",
         faction: ["Rebel"],
-        image: "",
+        image: "https://scontent-msp1-1.xx.fbcdn.net/v/t1.6435-9/76615090_802665896860606_3678306276871241728_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=Uo1xlSCcrPMQ7kNvgFxnLls&_nc_ht=scontent-msp1-1.xx&_nc_gid=AFZ1CgB9-P5281xlnqgyvDp&oh=00_AYDhltZbTGU5zfaeib2Llv7hyMGphfxZeu2l16im55l1nw&oe=6717B622",
         items: [
             {
                 type: "Free STL",
@@ -616,7 +617,7 @@ const resources: Entity[] = [
         name: "Gladiator Star Destroyer",
         category: "Ship",
         faction: ["Empire"],
-        image: "",
+        image: "https://i.redd.it/til-that-the-gladiator-class-star-destroyer-made-its-first-v0-2wyln99rjicc1.jpg?width=2420&format=pjpg&auto=webp&s=0fe896082b48d2bf9690141954e6495f9903d889",
         items: [
             {
                 type: "Free STL",
@@ -649,7 +650,7 @@ const resources: Entity[] = [
         name: "Imperial Raider",
         category: "Ship",
         faction: ["Empire"],
-        image: "",
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/67/34/673477de-a4b7-4908-9619-b65db92c5eef/raider-asteroids-art.jpg",
         items: [
             {
                 type: "Free STL",
@@ -672,7 +673,7 @@ const resources: Entity[] = [
         name: "Imperial Star Destroyer",
         category: "Ship",
         faction: ["Empire"],
-        image: "",
+        image: "https://artistmonkeys.com/wp-content/uploads/2021/09/Star-Destroyer-Empire-in-clouds.jpg",
         items: [
             {
                 type: "Free STL",
@@ -725,7 +726,7 @@ const resources: Entity[] = [
         name: "Interdictor",
         category: "Ship",
         faction: ["Empire"],
-        image: "",
+        image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/419fa4cc-f4d6-4a6d-999a-e7c6a5eebd8e/daeraxf-a6840b22-0eb3-4db0-ba53-3d5cae3f753d.jpg/v1/fill/w_905,h_443,q_75,strp/star_wars_interdictor_by_anthonydevine_daeraxf-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDQzIiwicGF0aCI6IlwvZlwvNDE5ZmE0Y2MtZjRkNi00YTZkLTk5OWEtZTdjNmE1ZWViZDhlXC9kYWVyYXhmLWE2ODQwYjIyLTBlYjMtNGRiMC1iYTUzLTNkNWNhZTNmNzUzZC5qcGciLCJ3aWR0aCI6Ijw9OTA1In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Xi5ngP91tbQwJvQVp92E9yIxuRXnumQKkYiSjj_uO-s",
         description: "You may need to select Interdictor from a list of options for some of these links",
         items: [
             {
@@ -764,7 +765,7 @@ const resources: Entity[] = [
         name: "Onager Star Destroyer",
         category: "Ship",
         faction: ["Empire"],
-        image: "",
+        image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/657811c3-939d-4d1e-8fa5-d1adbf999420/ddpy28k-99a447a3-724f-4d35-ac76-3c6591e7304f.jpg/v1/fill/w_1600,h_900,q_75,strp/onager_opens_fire_by_ravendeviant_ddpy28k-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvNjU3ODExYzMtOTM5ZC00ZDFlLThmYTUtZDFhZGJmOTk5NDIwXC9kZHB5MjhrLTk5YTQ0N2EzLTcyNGYtNGQzNS1hYzc2LTNjNjU5MWU3MzA0Zi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.OfDGg7gt4u9Ka3XAgs7_8GCUULS0YsIiOPSA15a7IxM",
         description: "",
         items: [
             {
@@ -778,7 +779,7 @@ const resources: Entity[] = [
         name: "Super Star Destroyer",
         category: "Ship",
         faction: ["Empire"],
-        image: "",
+        image: "https://i.pinimg.com/736x/d2/2a/07/d22a07d6210e907f49e60685567fb686.jpg",
         description: "This model is not sized to be used as a huge-sized Armada SSD as of 6/16/2024",
         items: [
             {
@@ -792,7 +793,7 @@ const resources: Entity[] = [
         name: "Belbullab",
         category: "Squadron",
         faction: ["Separatist"],
-        image: "",
+        image: "https://lumiere-a.akamaihd.net/v1/images/databank_soullessone_01_169_08305d9b.jpeg?region=0%2C0%2C1560%2C878",
         description: "",
         items: [
             {
@@ -835,7 +836,7 @@ const resources: Entity[] = [
         name: "Hyena",
         category: "Squadron",
         faction: ["Separatist"],
-        image: "",
+        image: "https://cdnb.artstation.com/p/assets/images/images/023/663/681/large/darren-tan-xw-hyena-bomber-da-02.jpg?1579937772",
         description: "",
         items: [
             {
@@ -931,7 +932,7 @@ const resources: Entity[] = [
         name: "Tri-fighter",
         category: "Squadron",
         faction: ["Separatist"],
-        image: "",
+        image: "https://i.pinimg.com/originals/24/4a/ea/244aea8cb4e9587c356fb3a7005453b1.jpg",
         description: "",
         items: [
             {
@@ -944,13 +945,14 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1671790824",
                 name: "PulsefiredGaming",
             },
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/driod-tri-fighter-star-wars-armada", name: "Tev'an shipyards" }
         ],
     },
     {
         name: "Vulture",
         category: "Squadron",
         faction: ["Separatist"],
-        image: "",
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/6e/41/6e41ad0d-332d-40a4-b6fb-a9bb3b6314a2/swz31_preview1.jpg",
         description: "",
         items: [
             {
@@ -1014,10 +1016,10 @@ const resources: Entity[] = [
         ],
     },
     {
-        name: "Clone Y-wing",
+        name: "BTL-B Y-wing",
         category: "Squadron",
         faction: ["Republic"],
-        image: "",
+        image: "https://steamuserimages-a.akamaihd.net/ugc/770613072976639531/99978427DF6F1E43580E53FF07E7BFDF346D2C97/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         description: "",
         items: [
             {
@@ -1065,7 +1067,7 @@ const resources: Entity[] = [
         name: "Delta-7",
         category: "Squadron",
         faction: ["Republic"],
-        image: "",
+        image: "https://lumiere-a.akamaihd.net/v1/images/delta-7-starfighter_fe9a59bc.jpeg?region=0%2C304%2C1560%2C873",
         description: "",
         items: [
             {
@@ -1158,10 +1160,10 @@ const resources: Entity[] = [
     //     ],
     //   },
     {
-        name: "V-19",
+        name: "V-19 Torrent",
         category: "Squadron",
         faction: ["Republic"],
-        image: "",
+        image: "https://swrpggm.com/wp-content/uploads/2021/04/V19Torrent_Feature.png",
         description: "",
         items: [
             {
@@ -1180,7 +1182,7 @@ const resources: Entity[] = [
         name: "Jumpmaster",
         category: "Squadron",
         faction: ["Empire"],
-        image: "",
+        image: "https://midwestscrub.wordpress.com/wp-content/uploads/2019/06/jm5k-1.jpg?w=640",
         description: "",
         items: [
             {
@@ -1188,13 +1190,14 @@ const resources: Entity[] = [
                 url: "https://www.thingiverse.com/thing:6613825",
                 name: "Rolo2358",
             },
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/jumpmaster-5000-star-wars-armada", name: "Tev'an shipyards" }
         ],
     },
     {
         name: "Lambda",
         category: "Squadron",
         faction: ["Empire"],
-        image: "",
+        image: "https://img.goodfon.com/original/1920x1210/8/ee/mack-sztaba-by-mack-sztaba-maintenance-shattl-t-4a-tipa-liam.jpg",
         description: "",
         items: [
             {
@@ -1213,7 +1216,7 @@ const resources: Entity[] = [
         name: "TIE Advanced",
         category: "Squadron",
         faction: ["Empire"],
-        image: "",
+        image: "https://patricksxwingblog.wordpress.com/wp-content/uploads/2021/07/tie-advanced.jpeg",
         description: "",
         items: [
             {
@@ -1227,7 +1230,7 @@ const resources: Entity[] = [
         name: "TIE Bomber",
         category: "Squadron",
         faction: ["Empire"],
-        image: "",
+        image: "https://i.redd.it/ym7lk3g7znf61.jpg",
         description: "",
         items: [
             {
@@ -1251,7 +1254,7 @@ const resources: Entity[] = [
         name: "TIE Defender",
         category: "Squadron",
         faction: ["Empire"],
-        image: "",
+        image: "https://4.bp.blogspot.com/-NGMKed2cEBg/WEBEr1vNqAI/AAAAAAAAJYQ/--ETvRe0vpob_1v8S-lxzNYtBIjYG-DxwCLcB/s1600/StarWars_TieDefenderPilot_MarkMolnar.jpg",
         description: "",
         items: [
             {
@@ -1265,7 +1268,7 @@ const resources: Entity[] = [
         name: "TIE Fighter",
         category: "Squadron",
         faction: ["Empire"],
-        image: "",
+        image: "https://shadow-squadron.com/wp-content/uploads/2017/08/star-wars-tie-fighter.jpg",
         description: "",
         items: [
             {
@@ -1294,7 +1297,7 @@ const resources: Entity[] = [
         name: "TIE Interceptor",
         category: "Squadron",
         faction: ["Empire"],
-        image: "",
+        image: "https://static.displate.com/380x270/displate/2019-03-25/ee6cb3780922459abb015ca60d78a8b4_065db4fc4d5108a007d96940ff996a12.jpg",
         description: "",
         items: [
             {
@@ -1318,7 +1321,7 @@ const resources: Entity[] = [
         name: "TIE Phantom",
         category: "Squadron",
         faction: ["Empire"],
-        image: "",
+        image: "https://pm1.aminoapps.com/6212/150d024c2943ac5cfa9f021c5d8f649f00e6a346_hq.jpg",
         description: "No models available at this time",
         items: [],
     },
@@ -1326,7 +1329,7 @@ const resources: Entity[] = [
         name: "VT-49 Decimator",
         category: "Squadron",
         faction: ["Empire"],
-        image: "",
+        image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdrONBXr2l-2A3UC6ptET7Qqil9xQALndwxX-bP386L_EQT5yKokd4eNQ6n3lyUlQ6eEg712bt2qnzz-k57P3sbvGsC3cf6a1iFmH-RlmAYwltFUs68iX3GbNlkvVGoz3uN0FD6ZTe0Q/s1600/881b4b1689c81ac6bd268ee54c21dece3cf26387_hq.jpg",
         description: "",
         items: [
             {
@@ -1358,7 +1361,7 @@ const resources: Entity[] = [
         name: "B-wing",
         category: "Squadron",
         faction: ["Rebel"],
-        image: "",
+        image: "https://preview.redd.it/cool-b-wing-artwork-from-blade-squadron-artist-chris-trevas-v0-6bxobldleofb1.png?width=1159&format=png&auto=webp&s=cf96700997e483489dfdce1d588b680757b02fa9",
         description: "",
         items: [
             {
@@ -1377,7 +1380,7 @@ const resources: Entity[] = [
         name: "E-wing",
         category: "Squadron",
         faction: ["Rebel"],
-        image: "",
+        image: "https://cdnb.artstation.com/p/assets/images/images/067/786/767/large/angelos-karderinis-e-wing2.jpg?1696248678",
         description: "",
         items: [
             {
@@ -1391,7 +1394,7 @@ const resources: Entity[] = [
         name: "Lancer Pursuit Craft",
         category: "Squadron",
         faction: ["Rebel"],
-        image: "",
+        image: "https://diceandcardboard.com/content/images/2022/01/swe16_shadowcaster-1.jpg",
         description: "",
         items: [],
     },
@@ -1399,7 +1402,7 @@ const resources: Entity[] = [
         name: "VCX-100",
         category: "Squadron",
         faction: ["Rebel"],
-        image: "",
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/58/50/5850f6d1-5ef1-4fdd-8527-b031c31e0b19/preview.jpg",
         description: "No models available at this time",
         items: [],
     },
@@ -1407,7 +1410,7 @@ const resources: Entity[] = [
         name: "X-wing",
         category: "Squadron",
         faction: ["Rebel"],
-        image: "",
+        image: "https://www.scififantasyhorror.co.uk/wp-content/uploads/2015/09/jerry-vanderstelt-force-awakens-artwork.jpg",
         description: "",
         items: [
             {
@@ -1441,7 +1444,7 @@ const resources: Entity[] = [
         name: "Y-wing",
         category: "Squadron",
         faction: ["Rebel"],
-        image: "",
+        image: "https://cdnb.artstation.com/p/assets/images/images/030/766/701/large/brian-j-murphy-y-wing.jpg?1601578240",
         description: "",
         items: [
             {
@@ -1472,10 +1475,10 @@ const resources: Entity[] = [
         ],
     },
     {
-        name: "Z-95",
+        name: "Z-95 Headhunter",
         category: "Squadron",
         faction: ["Rebel"],
-        image: "",
+        image: "https://preview.redd.it/9e6xjnpoj4901.jpg?width=640&crop=smart&auto=webp&s=8556c5e473a18bc2eaab2ff827d26f37e497ba6a",
         description: "",
         items: [
             {
@@ -1498,7 +1501,7 @@ const resources: Entity[] = [
     {
         name: "Cards",
         category: "Play Material",
-        image: "",
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/3a/e9/3ae953ab-b569-4862-8be6-35d850aca14b/swm38-box-left500.png",
         description: "",
         items: [
             {
@@ -1516,7 +1519,7 @@ const resources: Entity[] = [
     {
         name: "Base Tokens",
         category: "Play Material",
-        image: "",
+        image: "https://i.etsystatic.com/22662247/r/il/943ad4/6108405849/il_570xN.6108405849_11bo.jpg",
         description: "",
         items: [
             {
@@ -1529,12 +1532,18 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/775513516/custom-ship-tokens-for-x-wing-miniatures",
                 name: "ExclamationStudios",
             },
+            {
+                type: "Product", 
+                url: "https://www.etsy.com/listing/1784967957/star-wars-armada-compatible-blank-ship", 
+                name: "YourArtfulEndeavors" 
+            },
+            {type: "Product", url: "https://www.etsy.com/ca/listing/1797983185/star-wars-armada-compatible-blank-xlhuge", name: "YourArtfulEndeavors" }
         ],
     },
     {
         name: "Ship Bases",
         category: "Play Material",
-        image: "",
+        image: "https://makerworld.bblmw.com/makerworld/model/US2eab0548bd86a1/design/2024-08-22_dd0a631da48df.jpg?x-oss-process=image/resize,w_1000/format,webp",
         description: "",
         items: [
             {
@@ -1567,7 +1576,7 @@ const resources: Entity[] = [
     {
         name: "Squadron Bases",
         category: "Play Material",
-        image: "",
+        image: "https://www.belloflostsouls.net/wp-content/uploads/2015/10/armada-squadron.png",
         description: "",
         items: [
             {
@@ -1593,9 +1602,9 @@ const resources: Entity[] = [
         ],
     },
     {
-        name: "Movement Tools",
+        name: "Maneuver Tool",
         category: "Play Material",
-        image: "",
+        image: "https://m.media-amazon.com/images/I/61g5UUl9TEL._SL1500_.jpg",
         description: "",
         items: [
             {
@@ -1611,9 +1620,9 @@ const resources: Entity[] = [
         ],
     },
     {
-        name: "Range Rulers",
+        name: "Range Ruler",
         category: "Play Material",
-        image: "",
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/df/39/df39c72d-021e-4cf7-9cb4-c2601012af99/swm01_diagram_firingarcs.png",
         items: [
             {
                 type: "Free STL",
@@ -1645,7 +1654,7 @@ const resources: Entity[] = [
     {
         name: "Speed Dials",
         category: "Play Material",
-        image: "",
+        image: "https://cdn.svc.asmodee.net/production-amgcom/uploads/2022/06/SWM39-image3@500.png",
         items: [
             {
                 type: "Free STL",
@@ -1672,7 +1681,7 @@ const resources: Entity[] = [
     {
         name: "Command Dials",
         category: "Play Material",
-        image: "",
+        image: "https://cdn.svc.asmodee.net/production-amgcom/uploads/2022/06/SWM39-image3@500.png",
         items: [
             {
                 type: "Free STL",
@@ -1689,7 +1698,7 @@ const resources: Entity[] = [
     {
         name: "Obstacles",
         category: "Play Material",
-        image: "",
+        image: "https://ffg-forum-archive.entropicdreams.com/mirrored-images/http%253A%252F%252F2.bp.blogspot.com%252F-Tyxxd41vANM%252FVZbD7u7jmBI%252FAAAAAAAARlY%252FbqeJnKm0mxo%252Fs1600%252FSpaceRocks%25252B-%25252B2.jpg",
         items: [
             {
                 type: "Free STL",
@@ -1726,7 +1735,7 @@ const resources: Entity[] = [
     {
         name: "Tokens",
         category: "Play Material",
-        image: "",
+        image: "https://i.ebayimg.com/images/g/WuIAAOSw9xxjgCJi/s-l1200.jpg",
         items: [
             {
                 type: "Free STL",
@@ -1778,7 +1787,7 @@ const resources: Entity[] = [
     {
         name: "Dice",
         category: "Play Material",
-        image: "",
+        image: "https://m.media-amazon.com/images/I/71jY5rNClGL._AC_UF894,1000_QL80_.jpg",
         items: [
             {
                 type: "Product",
@@ -1795,7 +1804,7 @@ const resources: Entity[] = [
     {
         name: "Play Surfaces",
         category: "Play Material",
-        image: "",
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/6d/9b/6d9ba9a2-7f5a-4b36-833c-cabe97cda0f0/usws32-preview.jpg",
         items: [
             {
                 type: "Product",
@@ -1815,21 +1824,9 @@ const resources: Entity[] = [
         ]
     },
     {
-        name: "Round Counter",
-        category: "Play Material",
-        image: "",
-        items: [
-            {
-                type: "Product",
-                url: "https://admiraltatershipshop.etsy.com/listing/710592105/updated-magnetic-acrylic-round-counter",
-                name: "AdmiralTaterShipShop"
-            }
-        ]
-    },
-    {
         name: "YT-2400",
         category: "Squadron",
-        image: "",
+        image: "https://i.redd.it/cfxk9l1b3zqz.jpg",
         items: [
             {
                 type: "Product",
@@ -1841,7 +1838,7 @@ const resources: Entity[] = [
     {
         name: "YT-1300",
         category: "Squadron",
-        image: "",
+        image: "https://diceandcardboard.com/content/images/2022/01/swz-a_preview1-1.jpg",
         items: [
             {
                 type: "Free STL",
@@ -1859,36 +1856,39 @@ const resources: Entity[] = [
         name: "Aggressor",
         category: "Squadron",
         image: "https://spikeybits.com/wp-content/uploads/2018/12/IG2000-XWM-e1456876264955.jpg",
-        items: [],
-        description: "No models available at this time"
+        items: [
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/aggressor-class-fighter-star-wars-armada", name: "Tev'an shipyards" }
+        ],
     },
     {
         name: "Firespray-31",
         category: "Squadron",
-        image: "",
-        items: [],
-        description: "No models available at this time"
+        image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-qeIGbwr9Gaxx8ewFkH3Z_UVUNVO42ObS8KoPnAG0YLDEaGK31pR83voQVmycm9q7oPcUO2VOVtiMxnqemCb90iDD_b49CkPHikc7WFEzS4ccMhasN35QKl9GGj0LodA0AlH2JYHXaQ/s280/Slave-1.jpg",
+        items: [
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/firespray-31-star-wars-armada", name: "Tev'an shipyards" }
+        ],
     },
     {
         name: "HWK-290",
         category: "Squadron",
-        image: "",
+        image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a686adef-a30d-4e01-a848-e061b4ee28f7/dbuhwwz-623128aa-4460-4b82-8f91-2eac88bcd6f2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E2ODZhZGVmLWEzMGQtNGUwMS1hODQ4LWUwNjFiNGVlMjhmN1wvZGJ1aHd3ei02MjMxMjhhYS00NDYwLTRiODItOGY5MS0yZWFjODhiY2Q2ZjIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wkwEAFRKz6NpZcovwWMqUYcQOq2CfkV9aUARvpTmpZE",
         items: [],
         description: "No models available at this time"
     },
     {
         name: "Scurrg H-6",
         category: "Squadron",
-        image: "",
+        image: "https://i.redd.it/just-wanted-to-throw-some-love-to-my-favorite-star-wars-v0-9v8j66yuex8a1.png?width=1906&format=png&auto=webp&s=ac463ff0e10b7838dc629b1a7dd7cc8eac10355a",
         items: [],
         description: "No models available at this time"
     },
     {
         name: "YV-666",
         category: "Squadron",
-        image: "",
-        items: [],
-        description: "No models available at this time"
+        image: "https://images-cdn.fantasyflightgames.com/filer_public/d9/2a/d92ac8e1-2021-475e-9316-76a8877735c7/swx31_preview.jpg",
+        items: [
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/yv-666-star-wars-armada", name: "Tev'an shipyards" }
+        ],
     }
 ]
 

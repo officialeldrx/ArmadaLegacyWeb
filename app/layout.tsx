@@ -13,14 +13,19 @@ const title = localFont({
     variable: '--title'
 });
 
-export const metadata: Metadata = {
-    title: "Armada Legacy",
-};
-
 const fighter = localFont({
     src: "./fonts/fighter-keyword.ttf",
     variable: '--fighter'
 });
+
+const logo = localFont({
+    src: "./fonts/logo.ttf",
+    variable: '--logo'
+});
+
+export const metadata: Metadata = {
+    title: "Armada Legacy",
+};
 
 export default function RootLayout({
     children,
@@ -29,9 +34,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${title.variable} ${optima.variable} ${fighter.variable} antialiased`}>
+            <body className={`${title.variable} ${optima.variable} ${fighter.variable} ${logo.variable} antialiased`}>
                 <NavigationDrawer />
-                <main>{children}</main>
+                {children}
             </body>
         </html>
     );

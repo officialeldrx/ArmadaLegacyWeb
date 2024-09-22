@@ -27,7 +27,7 @@ export function NavigationDrawer() {
 
     return (
         <>
-            <div className="w-full bg-card flex gap-4 p-2 sticky top-0 z-10 border-b">
+            <div className="w-full bg-card flex gap-4 p-2 absolute top-0 z-10 border-b">
                 <Button
                     variant="ghost"
                     size="icon"

@@ -132,16 +132,19 @@ export function FilteredTable() {
                     placeholder="Faction"
                 />
             </div>
-            <div className="flex-grow overflow-auto">
+            <div className="flex-grow pb-2">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {filteredEntities.map((entity) => (
                         <div key={entity.name} className="shadow-md rounded-lg overflow-clip bg-card pb-1">
                             <div className="mb-4">
                                 {entity.image ? <img src={entity.image} alt="" style={{width: '100%', height: 280, objectFit: 'cover'}}/> : null}
-                                <h1 className="px-4 text-3xl pt-3 pb-1">{entity.name}</h1>
-                                <div className="text-gray-600 px-4">Category: {entity.category}</div>
-                                <div className={`text-gray-600 px-4 ${!entity.faction ? 'hidden' : ''}`}>Faction: {entity.faction?.join(", ") || "N/A"}</div>
-                                <div className={`text-gray-600 px-4 ${!entity.description ? 'hidden' : ''}`}>Note: {entity.description}</div>
+                                <div className="logoWrapper m-4">
+                                    <h1 className="text-center text-3xl pt-1 my-[1px]">{entity.name}</h1>
+                                </div>
+                                
+                                <div className="px-4"><span className="font-bold">Category:</span> {entity.category}</div>
+                                <div className={`px-4 ${!entity.faction ? 'hidden' : ''}`}><span className="font-bold">Faction:</span> {entity.faction?.join(", ") || "N/A"}</div>
+                                <div className={`px-4 ${!entity.description ? 'hidden' : ''}`}>Note: {entity.description}</div>
                                 {/* <div className="text-gray-600">Expansion: {entity.expansion || "N/A"}</div> */}
                             </div>
 
@@ -151,14 +154,14 @@ export function FilteredTable() {
 
                                 return (
                                     <div key={`${entity.name}-${type}`} className="mb-2 px-4">
-                                        <h6 className="mb-1">{type}</h6>
+                                        <h2 className="text-xl">{type.toUpperCase()}</h2>
                                         {itemsOfType.map((item, index) => (
                                             <div key={index}>
                                                 <a
                                                     href={item.url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="text-blue-500 cursor-pointer block"
+                                                    className="text-accent cursor-pointer block"
                                                 >
                                                     {item.name}
                                                 </a>
