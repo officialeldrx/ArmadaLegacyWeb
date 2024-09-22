@@ -1620,7 +1620,7 @@ const resources: Entity[] = [
         ],
     },
     {
-        name: "Range Ruler",
+        name: "Range Rulers",
         category: "Play Material",
         image: "https://images-cdn.fantasyflightgames.com/filer_public/df/39/df39c72d-021e-4cf7-9cb4-c2601012af99/swm01_diagram_firingarcs.png",
         items: [
@@ -1794,11 +1794,11 @@ const resources: Entity[] = [
                 url: "https://baronofdice.com/products/galactic-armada-premium-dice-set",
                 name: "BaronOfDice"
             },
-            {
-                type: "Product",
-                url: "https://reddit.com/user/BlacksmithOk6202",
-                name: "BlacksmithOk6202"
-            }
+            // {
+            //     type: "Product",
+            //     url: "https://reddit.com/user/BlacksmithOk6202",
+            //     name: "BlacksmithOk6202"
+            // }
         ]
     },
     {

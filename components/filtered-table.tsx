@@ -132,7 +132,7 @@ export function FilteredTable() {
                     placeholder="Faction"
                 />
             </div>
-            <div className="flex-grow pb-2">
+            <div className="flex-grow pb-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {filteredEntities.map((entity) => (
                         <div key={entity.name} className="shadow-md rounded-lg overflow-clip bg-card pb-1">
