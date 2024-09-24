@@ -41,7 +41,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1469194243",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -91,6 +91,7 @@ const resources: Entity[] = [
                 url: "https://www.shapeways.com/product/AQWHP3HW3/armada-clone-wars-200m-arquitens-light-cruiser?optionId=253197191&li=marketplace",
                 name: "Mel Miniatures",
             },
+            {type: "Model", url: "https://memnochmanufacturing.etsy.com/listing/1441812930", name: "Memnoch Manufacturing " }
         ],
     },
     {
@@ -112,7 +113,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1499502341",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -137,6 +138,7 @@ const resources: Entity[] = [
                 url: "https://resinengine.com/product/pelta-class-frigate-stl/",
                 name: "Ethan LeRoith",
             },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1798809445/republic-pelta-class-frigate-for-star", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -158,7 +160,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1532337159",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -191,7 +193,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1385182066",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -213,6 +215,8 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1454653704",
                 name: "TheShipBuilder",
             },
+            {type: "Model", url: "https://memnochmanufacturing.etsy.com/listing/1613705267", name: "Memnoch Manufacturing " },
+            {type: "Model", url: "https://memnochmanufacturing.etsy.com/listing/1680095596", name: "Memnoch Manufacturing " }
         ],
     },
     {
@@ -229,7 +233,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1546152034",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
         ],
     },
@@ -280,7 +284,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1436073824",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -308,7 +312,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1453545643",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -331,7 +335,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1453217219",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -359,12 +363,12 @@ const resources: Entity[] = [
     //         {
     //             type: "Product",
     //             url: "https://www.etsy.com/listing/1467667985",
-    //             name: "PulsefiredGaming",
+    //             name: "Pulsefired Gaming",
     //         },
     //         {
     //             type: "Product",
     //             url: "https://www.etsy.com/listing/1454377960",
-    //             name: "PulsefiredGaming",
+    //             name: "Pulsefired Gaming",
     //         },
     //         {
     //             type: "Product",
@@ -406,7 +410,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1456488672",
-                name: "PulsefiredGaming"
+                name: "Pulsefired Gaming"
             },
             {
                 type: "Product",
@@ -493,7 +497,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1515344610",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
         ],
     },
@@ -523,6 +527,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1388102799",
                 name: "SabreWorkshop",
             },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1797843457/rebel-mc80-home-one-cruiser-for-star", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -544,7 +549,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1394201424",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -592,7 +597,8 @@ const resources: Entity[] = [
                 url: "https://www.thingiverse.com/thing:6671437",
                 name: "Armada_Legacy",
             },
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/gr-75-rebel-transport-star-wars-armada-miniman13", name: "Tev'an shipyards" }
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/gr-75-rebel-transport-star-wars-armada-miniman13", name: "Tev'an shipyards" },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1787232501/gr-75-medium-transport-flotilla-2-ships", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -632,7 +638,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1532642362",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -665,7 +671,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1732832670",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
         ],
     },
@@ -698,12 +704,12 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1450832868",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1450851386",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -747,7 +753,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1413378265/imperial-vindicator-heavy-cruiser",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -759,6 +765,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1417370092",
                 name: "SabreWorkshop",
             },
+            
         ],
     },
     {
@@ -852,7 +859,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1671801950",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
         ],
     },
@@ -943,7 +950,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1671790824",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/driod-tri-fighter-star-wars-armada", name: "Tev'an shipyards" }
         ],
@@ -968,7 +975,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1685983205",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -996,7 +1003,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1691215962",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -1032,6 +1039,7 @@ const resources: Entity[] = [
                 url: "https://resinengine.com/product/clone-y-wing-stl-armada/",
                 name: "Ethan LeRoith",
             },
+            {type: "Model", url: "https://www.etsy.com/listing/1778433975/republic-y-wing-starfighter-squadron-6", name: "Pulsefired Gaming" }
         ],
     },
     //   {
@@ -1049,7 +1057,7 @@ const resources: Entity[] = [
     //       {
     //         type: "Product",
     //         url: "https://www.etsy.com/listing/1705403923",
-    //         name: "PulsefiredGaming",
+    //         name: "Pulsefired Gaming",
     //       },
     //       {
     //         type: "Product",
@@ -1150,7 +1158,7 @@ const resources: Entity[] = [
     //       {
     //         type: "Product",
     //         url: "https://www.etsy.com/listing/1671769964",
-    //         name: "PulsefiredGaming",
+    //         name: "Pulsefired Gaming",
     //       },
     //       {
     //         type: "Product",
@@ -1190,7 +1198,8 @@ const resources: Entity[] = [
                 url: "https://www.thingiverse.com/thing:6613825",
                 name: "Rolo2358",
             },
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/jumpmaster-5000-star-wars-armada", name: "Tev'an shipyards" }
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/jumpmaster-5000-star-wars-armada", name: "Tev'an shipyards" },
+            {type: "Model", url: "https://www.etsy.com/listing/1782405534/bounty-hunter-dengars-punishing-one", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1210,6 +1219,7 @@ const resources: Entity[] = [
                 url: "https://resinengine.com/product/lambda-stl-kopie/",
                 name: "Ethan LeRoith",
             },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1798806247/imperial-lambda-class-shuttle-irregular", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1315,6 +1325,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1568356202",
                 name: "TheShipBuilder",
             },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1755019976/tie-interceptor-fighter-squadron-6-for", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1355,6 +1366,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1671182299",
                 name: "WesJanson3D",
             },
+            {type: "Model", url: "https://www.etsy.com/listing/1758632994/rebel-a-wing-starfighter-squadron-6-for", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1374,6 +1386,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1597782561",
                 name: "TheShipBuilder",
             },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1749454381/rebel-b-wing-starfighter-squadron-6-for", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1388,6 +1401,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1657929004",
                 name: "WesJanson3D",
             },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1750351645/new-republic-e-wing-escort-starfighter", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1472,6 +1486,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1738179083",
                 name: "SabreWorkshop",
             },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1764224796/rebel-y-wing-starfighter-squadron-6-for", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1496,6 +1511,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1568435972",
                 name: "TheShipBuilder",
             },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1705403923/republic-clone-z-95-headhunter-fighter", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1569,7 +1585,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1397706175/star-wars-armada-compatible-ship-flight",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
         ],
     },
@@ -1587,7 +1603,7 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1502117966/squadron-stands-for-star-wars-armada",
-                name: "PulsefiredGaming",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Product",
@@ -1857,7 +1873,8 @@ const resources: Entity[] = [
         category: "Squadron",
         image: "https://spikeybits.com/wp-content/uploads/2018/12/IG2000-XWM-e1456876264955.jpg",
         items: [
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/aggressor-class-fighter-star-wars-armada", name: "Tev'an shipyards" }
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/aggressor-class-fighter-star-wars-armada", name: "Tev'an shipyards" },
+            {type: "Model", url: "https://www.etsy.com/listing/1782402814/bounty-hunter-ig-88s-aggressor-assault", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1865,7 +1882,8 @@ const resources: Entity[] = [
         category: "Squadron",
         image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-qeIGbwr9Gaxx8ewFkH3Z_UVUNVO42ObS8KoPnAG0YLDEaGK31pR83voQVmycm9q7oPcUO2VOVtiMxnqemCb90iDD_b49CkPHikc7WFEzS4ccMhasN35QKl9GGj0LodA0AlH2JYHXaQ/s280/Slave-1.jpg",
         items: [
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/firespray-31-star-wars-armada", name: "Tev'an shipyards" }
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/firespray-31-star-wars-armada", name: "Tev'an shipyards" },
+            {type: "Model", url: "https://www.etsy.com/listing/1796604559/bounty-hunter-boba-fetts-slave-1", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -1887,7 +1905,8 @@ const resources: Entity[] = [
         category: "Squadron",
         image: "https://images-cdn.fantasyflightgames.com/filer_public/d9/2a/d92ac8e1-2021-475e-9316-76a8877735c7/swx31_preview.jpg",
         items: [
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/yv-666-star-wars-armada", name: "Tev'an shipyards" }
+            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/yv-666-star-wars-armada", name: "Tev'an shipyards" },
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1782400338/bounty-hunter-bossks-hounds-tooth-yv-666", name: "Pulsefired Gaming" }
         ],
     }
 ]
