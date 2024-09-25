@@ -135,7 +135,7 @@ export function FilteredTable() {
             <div className="flex-grow pb-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {filteredEntities.map((entity) => (
-                        <div key={entity.name} className="shadow-md rounded-lg overflow-clip bg-card pb-1">
+                        <div key={entity.name} className="shadow-lg rounded-md overflow-clip bg-card pb-1 lg:hover:scale-[1.01] transition duration-400 ease-in-out will-change-transform">
                             <div className="mb-4">
                                 {entity.image ? <img src={entity.image} alt="" style={{width: '100%', height: 280, objectFit: 'cover'}}/> : null}
                                 <div className="logoWrapper m-4">
@@ -148,7 +148,7 @@ export function FilteredTable() {
                                 {/* <div className="text-gray-600">Expansion: {entity.expansion || "N/A"}</div> */}
                             </div>
 
-                            {["Free STL", "Paid STL", "Product"].map((type) => {
+                            {["Free STL", "Paid STL", "Model", "Card", "Base Token", "Product"].map((type) => {
                                 const itemsOfType = entity.items.filter((item) => item.type === type);
                                 if (itemsOfType.length === 0) return null;
 

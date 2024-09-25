@@ -1769,12 +1769,12 @@ const resources: Entity[] = [
         description: "",
         items: [
             {
-                type: "Product",
+                type: "Card",
                 url: "https://www.etsy.com/shop/BensArmadaShipCards",
                 name: "BensArmadaShipCards",
             },
             {
-                type: "Product",
+                type: "Card",
                 url: "https://www.etsy.com/shop/PetersabersWorkshop/",
                 name: "PetersabersWorkshop",
             },
@@ -1792,17 +1792,17 @@ const resources: Entity[] = [
                 name: "Armada Legacy",
             },
             {
-                type: "Product",
+                type: "Base Token",
                 url: "https://www.etsy.com/listing/775513516/custom-ship-tokens-for-x-wing-miniatures",
                 name: "ExclamationStudios",
             },
             {
-                type: "Product", 
+                type: "Base Token", 
                 url: "https://www.etsy.com/listing/1784967957/star-wars-armada-compatible-blank-ship", 
                 name: "YourArtfulEndeavors" 
             },
             {
-                type: "Product", 
+                type: "Base Token", 
                 url: "https://www.etsy.com/ca/listing/1797983185/star-wars-armada-compatible-blank-xlhuge", 
                 name: "YourArtfulEndeavors" 
             }
