@@ -1,10 +1,13 @@
 type Faction = "Empire" | "Republic" | "Separatist" | "Rebel";
 type Category = "Ship" | "Squadron" | "Play Material" | "Service";
+type Name = "Mel Miniatures" | "Armada Legacy" | "Ethan LeRoith" | "SUSSY" | "Pulsefired Gaming" | "TheShipBuilder" | "Onil Creations" | "Memnoch Manufacturing" | "WesJanson3D" | "SabreWorkshop" | "Tev'an shipyards" | "KDYards" | "spacenavy90" | "PetersabersWorkshop" | "" |
+"cadetvw" | "RVBLegend" | "Chieftom22" | "Space Supply Depot" | "Rolo2358" | "darkgref" | "R2Printer77" | "Peacedemo" | "UtarianMasterBlaster" | "BoardGameGoodies" | "BensArmadaShipCards" | "ExclamationStudios" | "YourArtfulEndeavors" | "MethodicalGeek" | "TheAvatar111" | 
+"err404" | "AirborneElmo" | "Radvoy" | "AdmiralTaterShipShop" | "SirSamson" | "Nihvu" | "Miniature Evolution" | "BaronOfDice" | "GripMats"
 
 interface Item {
     type: "Free STL" | "Paid STL" | "Model" | "Card" | "Base Token" | "Product";
     url: string;
-    name: string;
+    name: Name;
 }
 
 interface Entity {
@@ -31,7 +34,7 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://susyard.gumroad.com/l/acclam",
-                name: "Slightly Used Space Ships Yard",
+                name: "SUSSY",
             },
             {
                 type: "Paid STL",
@@ -39,17 +42,17 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1469194243",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1473911397",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.shapeways.com/product/9CAWMDNGU/armada-acclamator-assault-ship?optionId=57284170&li=shops",
                 name: "Mel Miniatures",
             },
@@ -64,7 +67,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:5414852",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
                 type: "Paid STL",
@@ -72,26 +75,30 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1480990779",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1468864267",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1246095666",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.shapeways.com/product/AQWHP3HW3/armada-clone-wars-200m-arquitens-light-cruiser?optionId=253197191&li=marketplace",
                 name: "Mel Miniatures",
             },
-            {type: "Model", url: "https://memnochmanufacturing.etsy.com/listing/1441812930", name: "Memnoch Manufacturing " }
+            {
+                type: "Model", 
+                url: "https://memnochmanufacturing.etsy.com/listing/1441812930", 
+                name: "Memnoch Manufacturing" 
+            }
         ],
     },
     {
@@ -103,7 +110,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6670096",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -111,12 +118,12 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1499502341",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.shapeways.com/product/Q59BGLX27/armada-republic-frigate?optionId=59861797&li=shops",
                 name: "Mel Miniatures",
             },
@@ -131,14 +138,23 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6683593",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/pelta-class-frigate-stl/",
                 name: "Ethan LeRoith",
             },
-            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1798809445/republic-pelta-class-frigate-for-star", name: "Pulsefired Gaming" }
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1798809445/republic-pelta-class-frigate-for-star", 
+                name: "Pulsefired Gaming" 
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-pelta-frigate-open",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -150,7 +166,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6663283",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -158,13 +174,13 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1532337159",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
-                url: "https://www.shapeways.com/product/K7N8B6ZN9/armada-venator-star-destroyer?optionId=56607638&li=shops",
+                type: "Model",
+                url: "https://only-games.co/products/armada-venator-star-destroyer",
                 name: "Mel Miniatures",
             },
         ],
@@ -178,45 +194,55 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6664810",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
                 url: "https://www.etsy.com/listing/1014014910",
-                name: "OnilCreations",
+                name: "Onil Creations",
             },
             {
                 type: "Paid STL",
                 url: "https://www.etsy.com/listing/1393751209",
-                name: "OnilCreations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1385182066",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1680095596",
-                name: "MemnochManufacturing",
+                name: "Memnoch Manufacturing",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1384642148",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1400054669",
                 name: "SabreWorkshop",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1454653704",
                 name: "TheShipBuilder",
             },
-            {type: "Model", url: "https://memnochmanufacturing.etsy.com/listing/1613705267", name: "Memnoch Manufacturing " },
-            {type: "Model", url: "https://memnochmanufacturing.etsy.com/listing/1680095596", name: "Memnoch Manufacturing " }
+            {
+                type: "Model", 
+                url: "https://memnochmanufacturing.etsy.com/listing/1613705267", 
+                name: "Memnoch Manufacturing" 
+
+            },
+            {
+                type: "Model", 
+                url: "https://memnochmanufacturing.etsy.com/listing/1680095596", 
+                name: "Memnoch Manufacturing" 
+
+            }
         ],
     },
     {
@@ -228,10 +254,10 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:4329950",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1546152034",
                 name: "Pulsefired Gaming",
             },
@@ -256,15 +282,15 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://www.etsy.com/listing/1603529632",
-                name: "OnilCreations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1547463798",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.shapeways.com/product/QHJ528HEK/armada-c-roc-gozanti-cruiser?optionId=56533018&li=marketplace",
                 name: "Mel Miniatures",
             },
@@ -282,12 +308,12 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1436073824",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.shapeways.com/product/47B638XWE/armada-munificent-frigate?optionId=57256553&li=shops",
                 name: "Mel Miniatures",
             },
@@ -310,13 +336,13 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1453545643",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
-                url: "https://www.shapeways.com/product/HU36CG3JH/armada-providence-destroyer-quot-invisible-hand-quot?optionId=58370224&li=shops",
+                type: "Model",
+                url: "https://only-games.co/products/armada-providence-destroyer-invisible-hand",
                 name: "Mel Miniatures",
             },
         ],
@@ -333,13 +359,13 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1453217219",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
-                url: "https://www.shapeways.com/product/4Q3B6TDN8/armada-recusant-destroyer?optionId=60538935&li=shops",
+                type: "Model",
+                url: "https://only-games.co/products/armada-recusant-destroyer",
                 name: "Mel Miniatures",
             },
         ],
@@ -353,40 +379,40 @@ const resources: Entity[] = [
     //         {
     //             type: "Free STL",
     //             url: "https://www.thingiverse.com/thing:4748795",
-    //             name: "Onil_Creations",
+    //             name: "Onil Creations",
     //         },
     //         {
     //             type: "Free STL",
     //             url: "https://www.thingiverse.com/thing:4700431",
-    //             name: "Onil_Creations",
+    //             name: "Onil Creations",
     //         },
     //         {
-    //             type: "Product",
+    //             type: "Model",
     //             url: "https://www.etsy.com/listing/1467667985",
     //             name: "Pulsefired Gaming",
     //         },
     //         {
-    //             type: "Product",
+    //             type: "Model",
     //             url: "https://www.etsy.com/listing/1454377960",
     //             name: "Pulsefired Gaming",
     //         },
     //         {
-    //             type: "Product",
+    //             type: "Model",
     //             url: "https://www.etsy.com/listing/1381161750",
     //             name: "SabreWorkshop",
     //         },
     //         {
-    //             type: "Product",
+    //             type: "Model",
     //             url: "https://www.etsy.com/listing/1392292691",
     //             name: "SabreWorkshop",
     //         },
     //         {
-    //             type: "Product",
+    //             type: "Model",
     //             url: "https://www.etsy.com/listing/1468909921",
     //             name: "TheShipBuilder",
     //         },
     //         {
-    //             type: "Product",
+    //             type: "Model",
     //             url: "https://www.shapeways.com/product/ZW2VWHVMA/armada-assault-frigate-mk-i-type-v?optionId=60727774&li=shops",
     //             name: "Mel Miniatures",
     //         },
@@ -400,27 +426,32 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6683615",
-                name: "Armada_Legacy"
+                name: "Armada Legacy"
             },
             {
                 type: "Paid STL",
                 url: "https://susyard.gumroad.com/l/ASFMkII",
-                name: "Slightly Used Space Ships Yard"
+                name: "SUSSY"
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1456488672",
                 name: "Pulsefired Gaming"
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1468924647",
                 name: "TheShipBuilder"
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1440338930",
                 name: "SabreWorkshop"
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-assault-frigate-mk-ii",
+                name: "Mel Miniatures"
             }
         ]
     },
@@ -433,18 +464,23 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:5193823",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1468878623",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1494711003",
                 name: "WesJanson3D",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-cr-90-corvette?variant=45424353771747",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -459,10 +495,15 @@ const resources: Entity[] = [
                 name: "Chieftom22",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1473477129",
                 name: "WesJanson3D",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-sphyrna-hammerhead-corvette-v2",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -474,10 +515,10 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6674551",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.shapeways.com/product/VXSKNB3EU/70-mc30c-peg",
                 name: "Space Supply Depot",
             },
@@ -495,10 +536,15 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1515344610",
                 name: "Pulsefired Gaming",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-mc75-star-cruiser",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -510,24 +556,33 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6683582",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
                 url: "https://www.etsy.com/listing/1272402470",
-                name: "OnilCreations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1454682250",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1388102799",
                 name: "SabreWorkshop",
             },
-            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1797843457/rebel-mc80-home-one-cruiser-for-star", name: "Pulsefired Gaming" }
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1797843457/rebel-mc80-home-one-cruiser-for-star", 
+                name: "Pulsefired Gaming" 
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-mc80-a-wingless-liberty",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -539,25 +594,25 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6670089",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
                 url: "https://www.etsy.com/listing/1286419395",
-                name: "OnilCreations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1394201424",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1454682250",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1431024209",
                 name: "SabreWorkshop",
             },
@@ -572,18 +627,23 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:5081007",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1454670022",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1453294330",
                 name: "SabreWorkshop",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-nebulon-b-frigate",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -595,10 +655,23 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671437",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/gr-75-rebel-transport-star-wars-armada-miniman13", name: "Tev'an shipyards" },
-            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1787232501/gr-75-medium-transport-flotilla-2-ships", name: "Pulsefired Gaming" }
+            {
+                type: "Paid STL", 
+                url: "https://cults3d.com/en/3d-model/game/gr-75-rebel-transport-star-wars-armada-miniman13", 
+                name: "Tev'an shipyards" 
+            },
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1787232501/gr-75-medium-transport-flotilla-2-ships", 
+                name: "Pulsefired Gaming" 
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-2x-gr-75-gallofree-medium-transport?variant=45424363208931",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -613,8 +686,8 @@ const resources: Entity[] = [
                 name: "darkgref",
             },
             {
-                type: "Product",
-                url: "https://www.shapeways.com/product/EQEBWF43A/armada-starhawk-prototype-two-parts",
+                type: "Model",
+                url: "https://only-games.co/products/armada-starhawk-prototype",
                 name: "Mel Miniatures",
             },
         ],
@@ -633,20 +706,20 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://susyard.gumroad.com/l/gladiator",
-                name: "Slightly Used Space Ships Yard",
+                name: "SUSSY",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1532642362",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1454740480",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1416875886",
                 name: "SabreWorkshop",
             },
@@ -669,10 +742,15 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1732832670",
                 name: "Pulsefired Gaming",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-raider-corvette",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -684,7 +762,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6664770",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -699,33 +777,38 @@ const resources: Entity[] = [
             {
                 type: "Paid STL",
                 url: "https://www.etsy.com/listing/1603495246/imperial-sd-pack-presuported",
-                name: "OnilCreations",
+                name: "Onil Creations",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1450832868",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1450851386",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1468897841",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1640872431",
-                name: "MemnochManufacturing",
+                name: "Memnoch Manufacturing",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1584961856",
                 name: "WesJanson3D",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-imperial-star-destroyer-chimaera",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -738,12 +821,12 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:4964733",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6664798",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -751,17 +834,17 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1413378265/imperial-vindicator-heavy-cruiser",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1473916935",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1417370092",
                 name: "SabreWorkshop",
             },
@@ -778,7 +861,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6683636",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
         ],
     },
@@ -794,6 +877,11 @@ const resources: Entity[] = [
                 url: "https://resinengine.com/product/executor-class-stl-armada/",
                 name: "Ethan LeRoith",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-super-star-destroyer-executor",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -806,13 +894,18 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671886",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/belbullab-22-stl/",
                 name: "Ethan LeRoith",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-separatist-shuttles-set-i",
+                name: "Mel Miniatures"
+            }
         ],
     },
     // {
@@ -828,12 +921,12 @@ const resources: Entity[] = [
     //       name: "RVBLegend",
     //     },
     //     {
-    //       type: "Product",
+    //       type: "Model",
     //       url: "https://www.etsy.com/listing/1568404510",
     //       name: "TheShipBuilder",
     //     },
     //     {
-    //       type: "Product",
+    //       type: "Model",
     //       url: "https://www.etsy.com/listing/1563569242",
     //       name: "SabreWorkshop",
     //     },
@@ -849,7 +942,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671887",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -857,10 +950,15 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1671801950",
                 name: "Pulsefired Gaming",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-hyena-bomber",
+                name: "Mel Miniatures"
+            }
         ],
     },
     // {
@@ -873,12 +971,12 @@ const resources: Entity[] = [
     //     {
     //       type: "Free STL",
     //       url: "https://www.thingiverse.com/thing:5406474",
-    //       name: "Onil_Creations",
+    //       name: "Onil Creations",
     //     },
     //     {
     //       type: "Paid STL",
     //       url: "https://susyard.gumroad.com/l/XW-Nantex",
-    //       name: "Slightly Used Space Ships Yard",
+    //       name: "SUSSY",
     //     },
     //     {
     //       type: "Paid STL",
@@ -886,17 +984,17 @@ const resources: Entity[] = [
     //       name: "Ethan LeRoith",
     //     },
     //     {
-    //       type: "Product",
+    //       type: "Model",
     //       url: "https://www.etsy.com/listing/1231806650",
     //       name: "WesJanson3D",
     //     },
     //     {
-    //       type: "Product",
+    //       type: "Model",
     //       url: "https://www.etsy.com/listing/1668068951",
     //       name: "TheShipBuilder",
     //     },
     //     {
-    //       type: "Product",
+    //       type: "Model",
     //       url: "https://www.etsy.com/listing/1573990353",
     //       name: "SabreWorkshop",
     //     },
@@ -924,12 +1022,12 @@ const resources: Entity[] = [
     //   description: "",
     //   items: [
     //     {
-    //       type: "Product",
+    //       type: "Model",
     //       url: "https://www.etsy.com/listing/1326079471",
     //       name: "WesJanson3D",
     //     },
     //     {
-    //       type: "Product",
+    //       type: "Model",
     //       url: "https://www.etsy.com/listing/1740495999",
     //       name: "TheShipBuilder",
     //     },
@@ -945,14 +1043,22 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671879",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1671790824",
                 name: "Pulsefired Gaming",
             },
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/driod-tri-fighter-star-wars-armada", name: "Tev'an shipyards" }
+            {
+                type: "Paid STL",
+                url: "https://cults3d.com/en/3d-model/game/driod-tri-fighter-star-wars-armada",
+                name: "Tev'an shipyards" },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-droid-tri-fighter",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -965,7 +1071,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671867",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -973,15 +1079,20 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1685983205",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1568420394",
                 name: "TheShipBuilder",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-vulture-droid",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -993,7 +1104,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671849",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -1001,25 +1112,30 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1691215962",
                 name: "Pulsefired Gaming",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1307359386",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1582640707",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1678837378",
                 name: "SabreWorkshop",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-arc-170?variant=45493209563363",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1032,14 +1148,23 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671834",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/clone-y-wing-stl-armada/",
                 name: "Ethan LeRoith",
             },
-            {type: "Model", url: "https://www.etsy.com/listing/1778433975/republic-y-wing-starfighter-squadron-6", name: "Pulsefired Gaming" }
+            {
+                type: "Model", 
+                url: "https://www.etsy.com/listing/1778433975/republic-y-wing-starfighter-squadron-6", 
+                name: "Pulsefired Gaming" 
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-clone-y-wing?variant=45493211955427",
+                name: "Mel Miniatures"
+            }
         ],
     },
     //   {
@@ -1055,17 +1180,17 @@ const resources: Entity[] = [
     //         name: "Ethan LeRoith",
     //       },
     //       {
-    //         type: "Product",
+    //         type: "Model",
     //         url: "https://www.etsy.com/listing/1705403923",
     //         name: "Pulsefired Gaming",
     //       },
     //       {
-    //         type: "Product",
+    //         type: "Model",
     //         url: "https://www.etsy.com/listing/1224522480",
     //         name: "WesJanson3D",
     //       },
     //       {
-    //         type: "Product",
+    //         type: "Model",
     //         url: "https://www.etsy.com/listing/1568435972",
     //         name: "TheShipBuilder",
     //       },
@@ -1081,7 +1206,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671837",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -1089,15 +1214,20 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1494709340",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1597484621",
                 name: "TheShipBuilder",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-delta-7-jedi-fighter?variant=45493205336291",
+                name: "Mel Miniatures"
+            }
         ],
     },
     //   {
@@ -1113,12 +1243,12 @@ const resources: Entity[] = [
     //         name: "Ethan LeRoith",
     //       },
     //       {
-    //         type: "Product",
+    //         type: "Model",
     //         url: "https://www.etsy.com/listing/1263982126",
     //         name: "WesJanson3D",
     //       },
     //       {
-    //         type: "Product",
+    //         type: "Model",
     //         url: "https://www.etsy.com/listing/1568466620",
     //         name: "TheShipBuilder",
     //       },
@@ -1132,12 +1262,12 @@ const resources: Entity[] = [
     //     description: "",
     //     items: [
     //       {
-    //         type: "Product",
+    //         type: "Model",
     //         url: "https://www.etsy.com/listing/1568455888",
     //         name: "TheShipBuilder",
     //       },
     //       {
-    //         type: "Product",
+    //         type: "Model",
     //         url: "https://www.etsy.com/listing/1676131705",
     //         name: "SabreWorkshop",
     //       },
@@ -1156,12 +1286,12 @@ const resources: Entity[] = [
     //         name: "Ethan LeRoith",
     //       },
     //       {
-    //         type: "Product",
+    //         type: "Model",
     //         url: "https://www.etsy.com/listing/1671769964",
     //         name: "Pulsefired Gaming",
     //       },
     //       {
-    //         type: "Product",
+    //         type: "Model",
     //         url: "https://www.etsy.com/listing/1585145949",
     //         name: "TheShipBuilder",
     //       },
@@ -1177,13 +1307,18 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671835",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/v19-torrent-stl-armada/",
                 name: "Ethan LeRoith",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-v-19-torrent?variant=45493117386979",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1198,8 +1333,23 @@ const resources: Entity[] = [
                 url: "https://www.thingiverse.com/thing:6613825",
                 name: "Rolo2358",
             },
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/jumpmaster-5000-star-wars-armada", name: "Tev'an shipyards" },
-            {type: "Model", url: "https://www.etsy.com/listing/1782405534/bounty-hunter-dengars-punishing-one", name: "Pulsefired Gaming" }
+            {
+                type: "Paid STL", 
+                url: "https://cults3d.com/en/3d-model/game/jumpmaster-5000-star-wars-armada", 
+                name: "Tev'an shipyards" 
+
+            },
+            {
+                type: "Model", 
+                url: "https://www.etsy.com/listing/1782405534/bounty-hunter-dengars-punishing-one", 
+                name: "Pulsefired Gaming" 
+
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-outrer-rim-unfinished-business-set",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1219,7 +1369,16 @@ const resources: Entity[] = [
                 url: "https://resinengine.com/product/lambda-stl-kopie/",
                 name: "Ethan LeRoith",
             },
-            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1798806247/imperial-lambda-class-shuttle-irregular", name: "Pulsefired Gaming" }
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1798806247/imperial-lambda-class-shuttle-irregular", 
+                name: "Pulsefired Gaming" 
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-6x-lambda-shuttle",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1234,6 +1393,11 @@ const resources: Entity[] = [
                 url: "https://resinengine.com/product/tie-adv-stl/",
                 name: "Ethan LeRoith",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-tie-advanced-x1",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1249,15 +1413,20 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1337691499",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1582548035",
                 name: "TheShipBuilder",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-tie-bomber",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1272,6 +1441,11 @@ const resources: Entity[] = [
                 url: "https://resinengine.com/product/tie-defender-stl/",
                 name: "Ethan LeRoith",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-tie-defender",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1284,7 +1458,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671935",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -1292,15 +1466,20 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1279852886",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1568373496",
                 name: "TheShipBuilder",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-tie-fighter",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1316,16 +1495,21 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1315549191",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1568356202",
                 name: "TheShipBuilder",
             },
-            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1755019976/tie-interceptor-fighter-squadron-6-for", name: "Pulsefired Gaming" }
+            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1755019976/tie-interceptor-fighter-squadron-6-for", name: "Pulsefired Gaming" },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-tie-interceptor",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1334,7 +1518,13 @@ const resources: Entity[] = [
         faction: ["Empire"],
         image: "https://pm1.aminoapps.com/6212/150d024c2943ac5cfa9f021c5d8f649f00e6a346_hq.jpg",
         description: "No models available at this time",
-        items: [],
+        items: [
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-tie-phantom",
+                name: "Mel Miniatures"
+            }
+        ],
     },
     {
         name: "VT-49 Decimator",
@@ -1346,8 +1536,13 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671821",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-sw-galaxies-set?variant=45493045657827",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1362,11 +1557,20 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1671182299",
                 name: "WesJanson3D",
             },
-            {type: "Model", url: "https://www.etsy.com/listing/1758632994/rebel-a-wing-starfighter-squadron-6-for", name: "Pulsefired Gaming" }
+            {
+                type: "Model", 
+                url: "https://www.etsy.com/listing/1758632994/rebel-a-wing-starfighter-squadron-6-for", 
+                name: "Pulsefired Gaming" 
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-a-wing?variant=45493209301219",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1377,16 +1581,25 @@ const resources: Entity[] = [
         description: "",
         items: [
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1638089402",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1597782561",
                 name: "TheShipBuilder",
             },
-            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1749454381/rebel-b-wing-starfighter-squadron-6-for", name: "Pulsefired Gaming" }
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1749454381/rebel-b-wing-starfighter-squadron-6-for", 
+                name: "Pulsefired Gaming"
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-b-wing?variant=45493209202915",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1397,11 +1610,20 @@ const resources: Entity[] = [
         description: "",
         items: [
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1657929004",
                 name: "WesJanson3D",
             },
-            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1750351645/new-republic-e-wing-escort-starfighter", name: "Pulsefired Gaming" }
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1750351645/new-republic-e-wing-escort-starfighter", 
+                name: "Pulsefired Gaming" 
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-e-wing?variant=45493204779235",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1410,7 +1632,13 @@ const resources: Entity[] = [
         faction: ["Rebel"],
         image: "https://diceandcardboard.com/content/images/2022/01/swe16_shadowcaster-1.jpg",
         description: "",
-        items: [],
+        items: [
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-outer-rim-player-ship-set",
+                name: "Mel Miniatures"
+            }
+        ],
     },
     {
         name: "VCX-100",
@@ -1418,7 +1646,13 @@ const resources: Entity[] = [
         faction: ["Rebel"],
         image: "https://images-cdn.fantasyflightgames.com/filer_public/58/50/5850f6d1-5ef1-4fdd-8527-b031c31e0b19/preview.jpg",
         description: "No models available at this time",
-        items: [],
+        items: [
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-outrer-rim-unfinished-business-set?variant=45493077770467",
+                name: "Mel Miniatures"
+            }
+        ],
     },
     {
         name: "X-wing",
@@ -1430,7 +1664,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:5406474",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
                 type: "Paid STL",
@@ -1438,20 +1672,25 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1278011943",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1568427422",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1747779373",
                 name: "SabreWorkshop",
             },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-x-wing?variant=45493116633315",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1464,7 +1703,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6671838",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Paid STL",
@@ -1472,21 +1711,30 @@ const resources: Entity[] = [
                 name: "Ethan LeRoith",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1650925013",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1568450164",
                 name: "TheShipBuilder",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1738179083",
                 name: "SabreWorkshop",
             },
-            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1764224796/rebel-y-wing-starfighter-squadron-6-for", name: "Pulsefired Gaming" }
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1764224796/rebel-y-wing-starfighter-squadron-6-for", 
+                name: "Pulsefired Gaming" 
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-12x-y-wing?variant=45493116436707",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1502,12 +1750,12 @@ const resources: Entity[] = [
                 name: "KDYards",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1286374759",
                 name: "WesJanson3D",
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/1568435972",
                 name: "TheShipBuilder",
             },
@@ -1541,7 +1789,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6703937",
-                name: "Armada_Legacy",
+                name: "Armada Legacy",
             },
             {
                 type: "Product",
@@ -1553,7 +1801,11 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1784967957/star-wars-armada-compatible-blank-ship", 
                 name: "YourArtfulEndeavors" 
             },
-            {type: "Product", url: "https://www.etsy.com/ca/listing/1797983185/star-wars-armada-compatible-blank-xlhuge", name: "YourArtfulEndeavors" }
+            {
+                type: "Product", 
+                url: "https://www.etsy.com/ca/listing/1797983185/star-wars-armada-compatible-blank-xlhuge", 
+                name: "YourArtfulEndeavors" 
+            }
         ],
     },
     {
@@ -1570,7 +1822,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:3962836",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
                 type: "Free STL",
@@ -1587,6 +1839,11 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1397706175/star-wars-armada-compatible-ship-flight",
                 name: "Pulsefired Gaming",
             },
+            {
+                type: "Product",
+                url: "https://www.etsy.com/listing/1032372344/star-wars-armada-ship-set?click_key=f77b6a8c45e43c3d71b0145f3bbbf9cea36e6e56%3A1032372344&click_sum=e990dd0b&ref=shop_home_active_4&crt=1",
+                name: "MethodicalGeek"
+            }
         ],
     },
     {
@@ -1598,7 +1855,7 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:4695564",
-                name: "Onil_Creations",
+                name: "Onil Creations",
             },
             {
                 type: "Product",
@@ -1780,6 +2037,11 @@ const resources: Entity[] = [
             },
             {
                 type: "Product",
+                url: "https://www.etsy.com/shop/AdmiralTaterShipShop?ref=seller-platform-mcnav&section_id=27524698",
+                name: "AdmiralTaterShipShop"
+            },
+            {
+                type: "Product",
                 url: "https://www.etsy.com/listing/1155660213/defence-tokens-for-star-wars-armada-set",
                 name: "Radvoy"
             },
@@ -1792,11 +2054,6 @@ const resources: Entity[] = [
                 type: "Product",
                 url: "https://www.etsy.com/listing/1155659709/raid-tokens-for-star-wars-armada-set-of",
                 name: "Radvoy"
-            },
-            {
-                type: "Product",
-                url: "https://www.etsy.com/shop/AdmiralTaterShipShop?ref=seller-platform-mcnav&section_id=27524698",
-                name: "AdmiralTaterShipShop"
             }
         ]
     },
@@ -1829,11 +2086,6 @@ const resources: Entity[] = [
             },
             {
                 type: "Product",
-                url: "https://www.etsy.com/listing/966611170/deployment-areas-for-x-wing-armada-and",
-                name: "GripMats"
-            },
-            {
-                type: "Product",
                 url: "https://www.etsy.com/shop/boardgamegoodies/?etsrc=sdt&section_id=37893068",
                 name: "BoardGameGoodies"
             }
@@ -1845,9 +2097,9 @@ const resources: Entity[] = [
         image: "https://i.redd.it/cfxk9l1b3zqz.jpg",
         items: [
             {
-                type: "Product",
-                url: "https://www.shapeways.com/product/ZT5QUE48Z/yt2400-armada",
-                name: "Colony Castings"
+                type: "Model",
+                url: "https://only-games.co/products/armada-outrer-rim-unfinished-business-set?variant=45493077770467",
+                name: "Mel Miniatures"
             }
         ]
     },
@@ -1859,11 +2111,11 @@ const resources: Entity[] = [
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:5405540",
-                name: "Onil_Creations"
+                name: "Onil Creations"
             },
             {
-                type: "Product",
-                url: "https://www.shapeways.com/product/XE5ZU2HF9/armada-yt-1300-set-i",
+                type: "Model",
+                url: "https://only-games.co/products/armada-millennium-falcon-set?variant=45493078327523",
                 name: "Mel Miniatures"
             }
         ]
@@ -1873,8 +2125,16 @@ const resources: Entity[] = [
         category: "Squadron",
         image: "https://spikeybits.com/wp-content/uploads/2018/12/IG2000-XWM-e1456876264955.jpg",
         items: [
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/aggressor-class-fighter-star-wars-armada", name: "Tev'an shipyards" },
-            {type: "Model", url: "https://www.etsy.com/listing/1782402814/bounty-hunter-ig-88s-aggressor-assault", name: "Pulsefired Gaming" }
+            {
+                type: "Paid STL", 
+                url: "https://cults3d.com/en/3d-model/game/aggressor-class-fighter-star-wars-armada", 
+                name: "Tev'an shipyards" 
+            },
+            {
+                type: "Model", 
+                url: "https://www.etsy.com/listing/1782402814/bounty-hunter-ig-88s-aggressor-assault", 
+                name: "Pulsefired Gaming" 
+            }
         ],
     },
     {
@@ -1882,8 +2142,21 @@ const resources: Entity[] = [
         category: "Squadron",
         image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-qeIGbwr9Gaxx8ewFkH3Z_UVUNVO42ObS8KoPnAG0YLDEaGK31pR83voQVmycm9q7oPcUO2VOVtiMxnqemCb90iDD_b49CkPHikc7WFEzS4ccMhasN35QKl9GGj0LodA0AlH2JYHXaQ/s280/Slave-1.jpg",
         items: [
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/firespray-31-star-wars-armada", name: "Tev'an shipyards" },
-            {type: "Model", url: "https://www.etsy.com/listing/1796604559/bounty-hunter-boba-fetts-slave-1", name: "Pulsefired Gaming" }
+            {
+                type: "Paid STL", 
+                url: "https://cults3d.com/en/3d-model/game/firespray-31-star-wars-armada", 
+                name: "Tev'an shipyards" 
+            },
+            {
+                type: "Model", 
+                url: "https://www.etsy.com/listing/1796604559/bounty-hunter-boba-fetts-slave-1", 
+                name: "Pulsefired Gaming" 
+            },
+            {
+                type: "Model",
+                url: "https://only-games.co/products/armada-bounty-hunters-ship-set-i",
+                name: "Mel Miniatures"
+            }
         ],
     },
     {
@@ -1905,8 +2178,16 @@ const resources: Entity[] = [
         category: "Squadron",
         image: "https://images-cdn.fantasyflightgames.com/filer_public/d9/2a/d92ac8e1-2021-475e-9316-76a8877735c7/swx31_preview.jpg",
         items: [
-            {type: "Paid STL", url: "https://cults3d.com/en/3d-model/game/yv-666-star-wars-armada", name: "Tev'an shipyards" },
-            {type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1782400338/bounty-hunter-bossks-hounds-tooth-yv-666", name: "Pulsefired Gaming" }
+            {
+                type: "Paid STL", 
+                url: "https://cults3d.com/en/3d-model/game/yv-666-star-wars-armada", 
+                name: "Tev'an shipyards" 
+            },
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1782400338/bounty-hunter-bossks-hounds-tooth-yv-666", 
+                name: "Pulsefired Gaming" 
+            }
         ],
     }
 ]

@@ -155,7 +155,7 @@ export function FilteredTable() {
                                 return (
                                     <div key={`${entity.name}-${type}`} className="mb-2 px-4">
                                         <h2 className="text-xl">{type.toUpperCase()}</h2>
-                                        {itemsOfType.map((item, index) => (
+                                        {itemsOfType.sort((a, b) => a.name.localeCompare(b.name)).map((item, index) => (
                                             <div key={index}>
                                                 <a
                                                     href={item.url}
