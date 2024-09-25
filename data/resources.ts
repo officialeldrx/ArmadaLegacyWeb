@@ -2,7 +2,7 @@ type Faction = "Empire" | "Republic" | "Separatist" | "Rebel";
 type Category = "Ship" | "Squadron" | "Play Material" | "Service";
 type Name = "Mel Miniatures" | "Armada Legacy" | "Ethan LeRoith" | "SUSSY" | "Pulsefired Gaming" | "TheShipBuilder" | "Onil Creations" | "Memnoch Manufacturing" | "WesJanson3D" | "SabreWorkshop" | "Tev'an shipyards" | "KDYards" | "spacenavy90" | "PetersabersWorkshop" | "" |
 "cadetvw" | "RVBLegend" | "Chieftom22" | "Space Supply Depot" | "Rolo2358" | "darkgref" | "R2Printer77" | "Peacedemo" | "UtarianMasterBlaster" | "BoardGameGoodies" | "BensArmadaShipCards" | "ExclamationStudios" | "YourArtfulEndeavors" | "MethodicalGeek" | "TheAvatar111" | 
-"err404" | "AirborneElmo" | "Radvoy" | "AdmiralTaterShipShop" | "SirSamson" | "Nihvu" | "Miniature Evolution" | "BaronOfDice" | "GripMats"
+"err404" | "AirborneElmo" | "Radvoy" | "AdmiralTaterShipShop" | "SirSamson" | "Nihvu" | "Miniature Evolution" | "BaronOfDice" | "GripMats" | "TzarFenix" | String
 
 interface Item {
     type: "Free STL" | "Paid STL" | "Model" | "Card" | "Base Token" | "Product";
@@ -53,7 +53,7 @@ const resources: Entity[] = [
             },
             {
                 type: "Model",
-                url: "https://www.shapeways.com/product/9CAWMDNGU/armada-acclamator-assault-ship?optionId=57284170&li=shops",
+                url: "https://only-games.co/products/armada-acclamator-assault-ship",
                 name: "Mel Miniatures",
             },
         ],
@@ -77,28 +77,28 @@ const resources: Entity[] = [
             {
                 type: "Model",
                 url: "https://www.etsy.com/listing/1480990779",
-                name: "Onil Creations",
+                name: "Pulsefired Gaming",
             },
             {
                 type: "Model",
                 url: "https://www.etsy.com/listing/1468864267",
-                name: "Onil Creations",
+                name: "TheShipBuilder",
             },
             {
                 type: "Model",
                 url: "https://www.etsy.com/listing/1246095666",
-                name: "Onil Creations",
+                name: "WesJanson3D",
             },
             {
                 type: "Model",
-                url: "https://www.shapeways.com/product/AQWHP3HW3/armada-clone-wars-200m-arquitens-light-cruiser?optionId=253197191&li=marketplace",
+                url: "https://only-games.co/products/armada-imperial-arquitens-light-cruiser-325m",
                 name: "Mel Miniatures",
             },
             {
                 type: "Model", 
                 url: "https://memnochmanufacturing.etsy.com/listing/1441812930", 
                 name: "Memnoch Manufacturing" 
-            }
+            },
         ],
     },
     {
@@ -124,7 +124,7 @@ const resources: Entity[] = [
             },
             {
                 type: "Model",
-                url: "https://www.shapeways.com/product/Q59BGLX27/armada-republic-frigate?optionId=59861797&li=shops",
+                url: "https://only-games.co/products/armada-2x-consular-republic-cruiser",
                 name: "Mel Miniatures",
             },
         ],
@@ -183,6 +183,11 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-venator-star-destroyer",
                 name: "Mel Miniatures",
             },
+            {
+                type: "Model", 
+                url: "https://memnochmanufacturing.etsy.com/listing/1785648604", 
+                name: "Memnoch Manufacturing" 
+            }
         ],
     },
     {
@@ -291,7 +296,7 @@ const resources: Entity[] = [
             },
             {
                 type: "Model",
-                url: "https://www.shapeways.com/product/QHJ528HEK/armada-c-roc-gozanti-cruiser?optionId=56533018&li=marketplace",
+                url: "https://only-games.co/products/armada-2x-gozanti-at-at-carrier",
                 name: "Mel Miniatures",
             },
         ],
@@ -314,7 +319,7 @@ const resources: Entity[] = [
             },
             {
                 type: "Model",
-                url: "https://www.shapeways.com/product/47B638XWE/armada-munificent-frigate?optionId=57256553&li=shops",
+                url: "https://only-games.co/products/armada-munificent-frigate",
                 name: "Mel Miniatures",
             },
         ],
@@ -516,11 +521,6 @@ const resources: Entity[] = [
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6674551",
                 name: "Armada Legacy",
-            },
-            {
-                type: "Model",
-                url: "https://www.shapeways.com/product/VXSKNB3EU/70-mc30c-peg",
-                name: "Space Supply Depot",
             },
         ],
     },
@@ -1517,7 +1517,7 @@ const resources: Entity[] = [
         category: "Squadron",
         faction: ["Empire"],
         image: "https://pm1.aminoapps.com/6212/150d024c2943ac5cfa9f021c5d8f649f00e6a346_hq.jpg",
-        description: "No models available at this time",
+        description: "",
         items: [
             {
                 type: "Model",
@@ -1637,7 +1637,8 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-outer-rim-player-ship-set",
                 name: "Mel Miniatures"
-            }
+            },
+            {type: "Free STL", url: "https://www.thingiverse.com/thing:6749826", name: "TzarFenix" }
         ],
     },
     {
@@ -1645,13 +1646,14 @@ const resources: Entity[] = [
         category: "Squadron",
         faction: ["Rebel"],
         image: "https://images-cdn.fantasyflightgames.com/filer_public/58/50/5850f6d1-5ef1-4fdd-8527-b031c31e0b19/preview.jpg",
-        description: "No models available at this time",
+        description: "",
         items: [
             {
                 type: "Model",
                 url: "https://only-games.co/products/armada-outrer-rim-unfinished-business-set?variant=45493077770467",
                 name: "Mel Miniatures"
-            }
+            },
+            {type: "Free STL", url: "https://www.thingiverse.com/thing:6749961", name: "TzarFenix" }
         ],
     },
     {
@@ -1804,7 +1806,7 @@ const resources: Entity[] = [
             {
                 type: "Base Token", 
                 url: "https://www.etsy.com/ca/listing/1797983185/star-wars-armada-compatible-blank-xlhuge", 
-                name: "YourArtfulEndeavors" 
+                name: "YourArtfulEndeavors (Huge)" 
             }
         ],
     },
@@ -1986,22 +1988,22 @@ const resources: Entity[] = [
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1452714802/neutral-space-station-for-star-wars",
-                name: "SabreWorkshop"
+                name: "SabreWorkshop (Station)"
             },
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1477884935/asteroids-for-star-wars-armada",
-                name: "SabreWorkshop"
+                name: "SabreWorkshop (Asteroids)"
             },
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1569757192/mc-debris-proxy-for-star-wars-armada",
-                name: "SabreWorkshop"
+                name: "SabreWorkshop (Debris)"
             },
             {
                 type: "Product",
                 url: "https://www.etsy.com/listing/1452715768/dust-fields-for-star-wars-armada",
-                name: "SabreWorkshop"
+                name: "SabreWorkshop (Dust Fields)"
             }
         ]
     },
@@ -2158,6 +2160,15 @@ const resources: Entity[] = [
                 name: "Mel Miniatures"
             }
         ],
+    },
+    {
+        name: "Gauntlet Fighter",
+        category: "Squadron",
+        image: "",
+        items: [
+            {type: "Free STL", url: "https://www.thingiverse.com/thing:6749845", name: "TzarFenix" }
+        ],
+        description: ""
     },
     {
         name: "HWK-290",
