@@ -2161,7 +2161,7 @@ const resources: Entity[] = [
     {
         name: "Gauntlet Fighter",
         category: "Squadron",
-        image: "",
+        image: "https://cdn.cara.app/cdn-cgi/image/width=1200/production/posts/e02d407f-5aba-4234-94d6-4600ed1d21e0/JB%20Casacop-GhZZuDIF9lOTBuoTcOHyL-Gar_Saxon_01.jpg",
         items: [
             {type: "Free STL", url: "https://www.thingiverse.com/thing:6749845", name: "TzarFenix" }
         ],
