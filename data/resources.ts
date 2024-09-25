@@ -1,13 +1,10 @@
 type Faction = "Empire" | "Republic" | "Separatist" | "Rebel";
 type Category = "Ship" | "Squadron" | "Play Material" | "Service";
-type Name = "Mel Miniatures" | "Armada Legacy" | "Ethan LeRoith" | "SUSSY" | "Pulsefired Gaming" | "TheShipBuilder" | "Onil Creations" | "Memnoch Manufacturing" | "WesJanson3D" | "SabreWorkshop" | "Tev'an shipyards" | "KDYards" | "spacenavy90" | "PetersabersWorkshop" | "" |
-"cadetvw" | "RVBLegend" | "Chieftom22" | "Space Supply Depot" | "Rolo2358" | "darkgref" | "R2Printer77" | "Peacedemo" | "UtarianMasterBlaster" | "BoardGameGoodies" | "BensArmadaShipCards" | "ExclamationStudios" | "YourArtfulEndeavors" | "MethodicalGeek" | "TheAvatar111" | 
-"err404" | "AirborneElmo" | "Radvoy" | "AdmiralTaterShipShop" | "SirSamson" | "Nihvu" | "Miniature Evolution" | "BaronOfDice" | "GripMats" | "TzarFenix" | String
 
 interface Item {
     type: "Free STL" | "Paid STL" | "Model" | "Card" | "Base Token" | "Product";
     url: string;
-    name: Name;
+    name: string;
 }
 
 interface Entity {
