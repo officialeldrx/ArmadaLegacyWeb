@@ -505,6 +505,11 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-sphyrna-hammerhead-corvette-v2",
                 name: "Mel Miniatures"
+            },
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1804984203/rebel-sphyrna-class-hammerhead-corvette", 
+                name: "Pulsefired Gaming" 
             }
         ],
     },
@@ -1964,6 +1969,11 @@ const resources: Entity[] = [
                 type: "Product",
                 url: "https://www.etsy.com/listing/1734769753/armada-command-dial",
                 name: "BensArmadaShipCards"
+            },
+            {
+                type: "Product", 
+                url: "https://www.etsy.com/ca/listing/1800939891/4-armada-compatible-command-dial-disk", 
+                name: "YourArtfulEndeavors"
             }
         ]
     },
@@ -2053,6 +2063,11 @@ const resources: Entity[] = [
                 type: "Product",
                 url: "https://www.etsy.com/listing/1155659709/raid-tokens-for-star-wars-armada-set-of",
                 name: "Radvoy"
+            },
+            {
+                type: "Product", 
+                url: "https://www.etsy.com/ca/listing/1800956877/6x-armada-compatible-chafffocus-tokens", 
+                name: "YourArtfulEndeavors"
             }
         ]
     },
@@ -2099,6 +2114,11 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-outrer-rim-unfinished-business-set?variant=45493077770467",
                 name: "Mel Miniatures"
+            },
+            {
+                type: "Free STL", 
+                url: "https://www.thingiverse.com/thing:6772043", 
+                name: "TzarFenix" 
             }
         ]
     },
