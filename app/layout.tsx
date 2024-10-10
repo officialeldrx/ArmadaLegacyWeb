@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { NavigationDrawer } from "@/components/navigation-drawer"
+import { Analytics } from "@vercel/analytics/react"
 
 const optima = localFont({
     src: "./fonts/optima.woff",
@@ -34,6 +35,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <Analytics/>
+            </head>
+            
             <body className={`${title.variable} ${optima.variable} ${fighter.variable} ${logo.variable} antialiased`}>
                 <NavigationDrawer />
                 {children}
