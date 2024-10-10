@@ -8,7 +8,9 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const navigationItems = [
-    { title: "Resources", href: "/" },
+    { title: "Home", href:"/" },
+    { title: "Fleet Builder", href:"/builder" },
+    { title: "Resources", href: "/resources" },
 ]
 
 export function NavigationDrawer() {
