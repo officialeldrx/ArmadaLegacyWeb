@@ -56,17 +56,53 @@ body {
     overflow: hidden;
 }
 
-h1{
+h1 {
     font-family: var(--logo);
     font-weight: bold;
-    color: var(--logoColor)!important;
+    color: var(--logoColor) !important;
+    font-size: xx-large;
+
+    /* Original thin borders */
     border-top: 1px solid var(--logoColor);
     border-bottom: 1px solid var(--logoColor);
+
+    /* Positioning and spacing */
+    position: relative; /* Needed for ::before to position correctly */
+    margin-top: 1rem; /* mt-4 */
+    text-align: center; /* text-center */
+    padding-top: 0.5rem; /* pt-1 */
+    line-height: 1;
+    margin-bottom: 0.5em; /* my-[1px] */
+    margin-top: 0.5em;
 }
 
-.logoWrapper{
-    border-top: 2px solid var(--logoColor);
-    border-bottom: 2px solid var(--logoColor);
+/* ::before for the additional border with gap */
+h1::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Adjust the gap size (this creates the space) */
+    left: 0;
+    right: 0;
+    height: calc(100% + 10px); /* Ensures the bottom shadow aligns as well */
+    border-top: 2px solid var(--logoColor); /* Top additional thick border */
+    border-bottom: 2px solid var(--logoColor); /* Bottom additional thick border */
+    z-index: -1; /* Places it behind the original borders */
+}
+
+h2{
+    font-size: x-large;
+}
+
+h3{
+    font-size: large;
+}
+
+.post h2, .post h3{
+    margin-top: 1em;
+}
+
+.post a{
+    color: var(--logoColor)
 }
 
 h2, h3, h4, h5{

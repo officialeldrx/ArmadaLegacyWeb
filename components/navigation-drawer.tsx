@@ -11,6 +11,7 @@ const navigationItems = [
     { title: "Home", href:"/" },
     { title: "Fleet Builder", href:"/builder" },
     { title: "Resources", href: "/resources" },
+    { title: "Posts", href: "/posts" }
 ]
 
 export function NavigationDrawer() {

@@ -41,7 +41,9 @@ export default function RootLayout({
             
             <body className={`${title.variable} ${optima.variable} ${fighter.variable} ${logo.variable} antialiased`}>
                 <NavigationDrawer />
-                {children}
+                <main className="h-full w-full pt-16 overflow-y-auto flex justify-center">
+                    {children}
+                </main>
             </body>
         </html>
     );

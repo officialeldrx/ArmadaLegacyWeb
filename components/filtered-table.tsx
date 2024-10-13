@@ -138,9 +138,7 @@ export function FilteredTable() {
                         <div key={entity.name} className="shadow-lg rounded-md overflow-clip bg-card pb-1 lg:hover:scale-[1.01] transition duration-400 ease-in-out will-change-transform">
                             <div className="mb-4">
                                 {entity.image ? <img src={entity.image} alt="" style={{width: '100%', height: 280, objectFit: 'cover'}}/> : null}
-                                <div className="logoWrapper m-4">
-                                    <h1 className="text-center text-3xl pt-1 my-[1px]">{entity.name}</h1>
-                                </div>
+                                <h1 className="mx-4">{entity.name}</h1>
                                 
                                 <div className="px-4"><span className="font-bold">Category:</span> {entity.category}</div>
                                 <div className={`px-4 ${!entity.faction ? 'hidden' : ''}`}><span className="font-bold">Faction:</span> {entity.faction?.join(", ") || "N/A"}</div>
