@@ -96,6 +96,11 @@ const resources: Entity[] = [
                 url: "https://memnochmanufacturing.etsy.com/listing/1441812930", 
                 name: "Memnoch Manufacturing" 
             },
+            {
+                type: "Model", 
+                url: "https://www.etsy.com/listing/1795724976/arquitens-cruiser", 
+                name: "BensArmadaShipCards" 
+            }
         ],
     },
     {
@@ -184,6 +189,11 @@ const resources: Entity[] = [
                 type: "Model", 
                 url: "https://memnochmanufacturing.etsy.com/listing/1785648604", 
                 name: "Memnoch Manufacturing" 
+            },
+            {
+                type: "Model", 
+                url: "https://www.etsy.com/listing/1795718108/venator-star-destroyer", 
+                name: "BensArmadaShipCards" 
             }
         ],
     },
@@ -735,8 +745,8 @@ const resources: Entity[] = [
         items: [
             {
                 type: "Free STL",
-                url: "https://www.thingiverse.com/thing:6119208",
-                name: "Peacedemo",
+                url: "https://makerworld.com/en/models/712988",
+                name: "MormegilSC",
             },
             {
                 type: "Paid STL",
@@ -865,6 +875,25 @@ const resources: Entity[] = [
                 url: "https://www.thingiverse.com/thing:6683636",
                 name: "Armada Legacy",
             },
+        ],
+    },
+    {
+        name: "Quasar Fire Carrier",
+        category: "Ship",
+        faction: ["Empire"],
+        image: "https://static.wikia.nocookie.net/starwars/images/5/5d/Quasar-Fire-II.png",
+        description: "",
+        items: [
+            {
+                type: "Free STL",
+                url: "https://www.thingiverse.com/thing:6664781",
+                name: "Armada Legacy",
+            },
+            {
+                type: "Model",
+                url: "https://www.thingiverse.com/thing:6664781",
+                name: "BensArmadaShipCards",
+            }
         ],
     },
     {
@@ -1447,6 +1476,11 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-12x-tie-defender",
                 name: "Mel Miniatures"
+            },
+            {
+                type: "Model",
+                url: "https://pulsefiredgaming.etsy.com/listing/1793890970/imperial-tie-defender-multi-role",
+                name: "Pulsefired Gaming"
             }
         ],
     },
@@ -2119,6 +2153,11 @@ const resources: Entity[] = [
                 type: "Free STL", 
                 url: "https://www.thingiverse.com/thing:6772043", 
                 name: "TzarFenix" 
+            },
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1791167768/rogue-yt-2400-light-freighter-irregular", 
+                name: "Pulsefired Gaming" 
             }
         ]
     },
@@ -2136,6 +2175,11 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-millennium-falcon-set?variant=45493078327523",
                 name: "Mel Miniatures"
+            },
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1805365325/rogue-yt-1300-light-freighter-irregular", 
+                name: "Pulsefired Gaming" 
             }
         ]
     },
@@ -2183,7 +2227,16 @@ const resources: Entity[] = [
         category: "Squadron",
         image: "https://cdn.cara.app/cdn-cgi/image/width=1200/production/posts/e02d407f-5aba-4234-94d6-4600ed1d21e0/JB%20Casacop-GhZZuDIF9lOTBuoTcOHyL-Gar_Saxon_01.jpg",
         items: [
-            {type: "Free STL", url: "https://www.thingiverse.com/thing:6749845", name: "TzarFenix" }
+            {
+                type: "Free STL", 
+                url: "https://www.thingiverse.com/thing:6749845", 
+                name: "TzarFenix" 
+            },
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1788066485/mandalorian-gauntlet-komrk-fighter", 
+                name: "Pulsefired Gaming" 
+            }
         ],
         description: ""
     },
@@ -2191,14 +2244,26 @@ const resources: Entity[] = [
         name: "HWK-290",
         category: "Squadron",
         image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a686adef-a30d-4e01-a848-e061b4ee28f7/dbuhwwz-623128aa-4460-4b82-8f91-2eac88bcd6f2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E2ODZhZGVmLWEzMGQtNGUwMS1hODQ4LWUwNjFiNGVlMjhmN1wvZGJ1aHd3ei02MjMxMjhhYS00NDYwLTRiODItOGY5MS0yZWFjODhiY2Q2ZjIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wkwEAFRKz6NpZcovwWMqUYcQOq2CfkV9aUARvpTmpZE",
-        items: [],
+        items: [
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1791171056/rogue-hwk-290-light-freighter-irregular", 
+                name: "Pulsefired Gaming" 
+            }
+        ],
         description: "No models available at this time"
     },
     {
         name: "Scurrg H-6",
         category: "Squadron",
         image: "https://i.redd.it/just-wanted-to-throw-some-love-to-my-favorite-star-wars-v0-9v8j66yuex8a1.png?width=1906&format=png&auto=webp&s=ac463ff0e10b7838dc629b1a7dd7cc8eac10355a",
-        items: [],
+        items: [
+            {
+                type: "Model", 
+                url: "https://pulsefiredgaming.etsy.com/listing/1805368791/rogue-scurrg-h-6-irregular-starfighter", 
+                name: "Pulsefired Gaming" 
+            }
+        ],
         description: "No models available at this time"
     },
     {
