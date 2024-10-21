@@ -1588,6 +1588,11 @@ const resources: Entity[] = [
         image: "https://preview.redd.it/concept-art-by-ralph-mcquarrie-of-a-beautiful-blue-a-wing-v0-8e7p9gtpqye81.jpg?width=1080&crop=smart&auto=webp&s=49be5c842a81d6f55e09579aa8e26dfb2d0cfbd0",
         items: [
             {
+                type: "Free STL",
+                url: "https://makerworld.com/en/models/720552",
+                name: "MormegilSC",
+            },
+            {
                 type: "Paid STL",
                 url: "https://resinengine.com/product/a-wing-squadrons-stl/",
                 name: "Ethan LeRoith",
@@ -2188,6 +2193,11 @@ const resources: Entity[] = [
         category: "Squadron",
         image: "https://spikeybits.com/wp-content/uploads/2018/12/IG2000-XWM-e1456876264955.jpg",
         items: [
+            {
+                type: "Free STL", 
+                url: "https://makerworld.com/en/models/720533", 
+                name: "MormegilSC" 
+            },
             {
                 type: "Paid STL", 
                 url: "https://cults3d.com/en/3d-model/game/aggressor-class-fighter-star-wars-armada", 
