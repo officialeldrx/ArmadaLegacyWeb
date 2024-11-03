@@ -1,7 +1,7 @@
 ---
 title: 'September News'
 date: '2024-09-25'
-image: 'https://cdn.discordapp.com/attachments/1221560059650113566/1288624852483309664/legacy_update.png?ex=670cef2a&is=670b9daa&hm=695ac159a3ecfaa71cc287abc4624c97c7504bc28ba7f57d5c9bc62f4aa9aab6&'
+image: 'https://cdn.discordapp.com/attachments/1221560059650113566/1288624852483309664/legacy_update.png?ex=67289eaa&is=67274d2a&hm=9b140c0e15ae2918242426cc45e7ccbf078b16cafda9a260209f62d8a09f256e&'
 ---
 
 # September Community Update

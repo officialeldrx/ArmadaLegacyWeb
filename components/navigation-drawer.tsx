@@ -8,10 +8,10 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const navigationItems = [
-    { title: "Home", href:"/" },
+    { title: "Home", href: "/" },
     // { title: "Fleet Builder", href:"/builder" },
     { title: "Resources", href: "/resources" },
-    { title: "Posts", href: "/posts" }
+    // { title: "Posts", href: "/posts" }
 ]
 
 export function NavigationDrawer() {
@@ -57,7 +57,7 @@ export function NavigationDrawer() {
                 aria-modal="true"
             >
                 <div className="py-8 px-16 border-b">
-                    <Image src={Logo} alt="" className="invert"/>
+                    <Image src={Logo} alt="" className="invert" />
                 </div>
                 <nav className="px-4 py-2">
                     <ul className="space-y-2">

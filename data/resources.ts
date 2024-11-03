@@ -53,6 +53,7 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-acclamator-assault-ship",
                 name: "Mel Miniatures",
             },
+            { type: "Model", url: "https://www.etsy.com/listing/1434129161/acclamator-imp-gar-for-star-wars-armada?click_key=376f302886cee7aa013f25e57fc4c5fb69b8934f%3A1434129161&click_sum=ae8efb8d&ref=shop_home_active_29", name: "SabreWorkshop" }
         ],
     },
     {
@@ -97,10 +98,11 @@ const resources: Entity[] = [
                 name: "Memnoch Manufacturing"
             },
             {
-                type: "Model", 
-                url: "https://www.etsy.com/listing/1795724976/arquitens-cruiser", 
-                name: "BensArmadaShipCards" 
-            }
+                type: "Model",
+                url: "https://www.etsy.com/listing/1795724976/arquitens-cruiser",
+                name: "BensArmadaShipCards"
+            },
+            { type: "Model", url: "https://www.etsy.com/listing/1437379079/aqruitens-light-cruiser-republic-empire?click_key=9e9a829682da4979c4d93943e070ae90bfc15134%3A1437379079&click_sum=0402db96&ref=shop_home_active_61&crt=1", name: "SabreWorkshop" }
         ],
     },
     {
@@ -186,15 +188,17 @@ const resources: Entity[] = [
                 name: "Mel Miniatures",
             },
             {
-                type: "Model", 
-                url: "https://memnochmanufacturing.etsy.com/listing/1785648604", 
-                name: "Memnoch Manufacturing" 
+                type: "Model",
+                url: "https://memnochmanufacturing.etsy.com/listing/1785648604",
+                name: "Memnoch Manufacturing"
             },
             {
-                type: "Model", 
-                url: "https://www.etsy.com/listing/1795718108/venator-star-destroyer", 
-                name: "BensArmadaShipCards" 
-            }
+                type: "Model",
+                url: "https://www.etsy.com/listing/1795718108/venator-star-destroyer",
+                name: "BensArmadaShipCards"
+            },
+            { type: "Model", url: "https://www.etsy.com/listing/1776916108/star-wars-armada-venator-star-destroyer?click_key=a3f91939303b5f06e4ea46f7bca020ac43a176cd%3A1776916108&click_sum=3aaf0e87&ref=shop_home_active_1&pro=1&variation0=4777709522", name: "Cassie Renee Art" },
+            { type: "Model", url: "https://www.etsy.com/listing/1788015240/republic-venator-star-destroyer-updated?click_key=6832a0a77efe9af7957d4c542bb0f57d970aa746%3A1788015240&click_sum=6581e716&ref=shop_home_active_12&crt=1", name: "SabreWorkshop" }
         ],
     },
     {
@@ -254,7 +258,8 @@ const resources: Entity[] = [
                 url: "https://memnochmanufacturing.etsy.com/listing/1680095596",
                 name: "Memnoch Manufacturing"
 
-            }
+            },
+            { type: "Model", url: "https://www.etsy.com/listing/1782906968/star-wars-armada-imperial-victory-star?click_key=6d420b8477e60d4ebc7ac7ee9e1a712308be125b%3A1782906968&click_sum=368409e3&ref=shop_home_active_8&pro=1&variation0=4781522154", name: "Cassie Renee Art" }
         ],
     },
     {
@@ -329,6 +334,7 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-munificent-frigate",
                 name: "Mel Miniatures",
             },
+            { type: "Model", url: "https://www.etsy.com/listing/1776824608/munificent-class-star-frigate-for-star?click_key=b9931c27bfc95e5dbf8ad0bc5a4c6010f883d368%3A1776824608&click_sum=5855db0e&ref=shop_home_active_40&crt=1", name: "SabreWorkshop" }
         ],
     },
     {
@@ -357,6 +363,8 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-providence-destroyer-invisible-hand",
                 name: "Mel Miniatures",
             },
+            { type: "Model", url: "https://www.etsy.com/listing/1791026255/providence-class-dreadnought-for-star?click_key=2babbb0d12b38e78a03adc18bc71781ef5180d84%3A1791026255&click_sum=3098bf22&ref=shop_home_active_14&crt=1", name: "SabreWorkshop" },
+            { type: "Model", url: "https://www.etsy.com/listing/1405442461/star-wars-armada-rebel-one-providence?click_key=af2b8185ab2cc0d3a8919b61e5a0d2ae0b211461%3A1405442461&click_sum=e037c36d&ref=shop_home_active_9&sca=1", name: "BossnossCreations" }
         ],
     },
     {
@@ -380,6 +388,7 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-recusant-destroyer",
                 name: "Mel Miniatures",
             },
+            { type: "Model", url: "https://www.etsy.com/listing/1747617748/recusant-light-destroyer-for-star-wars?click_key=7902a413b191f3a20f4a75e9c0f3f5b955def173%3A1747617748&click_sum=12be6c85&ref=shop_home_active_39", name: "SabreWorkshop" }
         ],
     },
     // {
@@ -492,7 +501,8 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-cr-90-corvette?variant=45424353771747",
                 name: "Mel Miniatures"
-            }
+            },
+            { type: "Model", url: "https://www.etsy.com/listing/1812872265/sw-armada-compatible-cr-90-proxy", name: "YourArtfulEndeavors" }
         ],
     },
     {
@@ -594,7 +604,9 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-mc80-a-wingless-liberty",
                 name: "Mel Miniatures"
-            }
+            },
+            { type: "Model", url: "https://www.etsy.com/listing/1431024209/mc80-liberty-for-star-wars-armada?click_key=ed15befe93106fecd062b9c847019f59cbda57ba%3A1431024209&click_sum=6b1f6296&ref=shop_home_active_17&crt=1", name: "SabreWorkshop" },
+            { type: "Model", url: "https://www.etsy.com/listing/1802860330/sw-armada-compatible-mc80s-proxy", name: "YourArtfulEndeavors" }
         ],
     },
     {
@@ -628,6 +640,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1431024209",
                 name: "SabreWorkshop",
             },
+            { type: "Model", url: "https://www.etsy.com/listing/1802860330/sw-armada-compatible-mc80s-proxy", name: "YourArtfulEndeavors" }
         ],
     },
     {
@@ -655,7 +668,8 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-nebulon-b-frigate",
                 name: "Mel Miniatures"
-            }
+            },
+            { type: "Model", url: "https://www.etsy.com/listing/1798682692/sw-armada-compatible-nebulon-b-proxy", name: "YourArtfulEndeavors" }
         ],
     },
     {
@@ -762,7 +776,8 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-raider-corvette",
                 name: "Mel Miniatures"
-            }
+            },
+            { type: "Model", url: "https://www.etsy.com/listing/1739062936/imperial-raider-for-star-wars-armada?click_key=176a2c6ccf1f177c515ad78bffeb54d4ee58cfd0%3A1739062936&click_sum=d3887074&ref=shop_home_active_70&crt=1", name: "SabreWorkshop" }
         ],
     },
     {
@@ -820,7 +835,9 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-imperial-star-destroyer-chimaera",
                 name: "Mel Miniatures"
-            }
+            },
+            { type: "Model", url: "https://www.etsy.com/listing/1797494704/star-wars-armada-imperial-star-destroyer?click_key=cff3104180d85ba547694e3984a98c482da399ea%3A1797494704&click_sum=d88103e3&ref=shop_home_active_19&pro=1&variation0=4856516506", name: "Cassie Renee Art" },
+            { type: "Model", url: "https://www.etsy.com/listing/1484309053/isd-variations-for-star-wars-armada?click_key=cf56624c584cc7c2be92662e0fd2bf5d2497ca25%3A1484309053&click_sum=02616e64&ref=shop_home_active_6&crt=1", name: "SabreWorkshop" }
         ],
     },
     {
@@ -889,11 +906,9 @@ const resources: Entity[] = [
                 url: "https://www.thingiverse.com/thing:6664781",
                 name: "Armada Legacy",
             },
-            {
-                type: "Model",
-                url: "https://www.thingiverse.com/thing:6664781",
-                name: "BensArmadaShipCards",
-            }
+            { type: "Model", url: "https://www.etsy.com/listing/1795712738/quasar-fire-cruiser", name: "BensArmadaShipCards" },
+            { type: "Model", url: "https://www.etsy.com/listing/1753598476/star-wars-armada-quasar-fire-cruiser?click_key=72771f955e6e4a5a72d0f53ace51d23e71dd61d8%3A1753598476&click_sum=a5b470a0&ref=shop_home_active_11&pro=1", name: "Cassie Renee Art" },
+            { type: "Model", url: "https://www.etsy.com/listing/1401635783/quasar-fire-for-star-wars-armada?click_key=6e0d59ce253cf28fa866f56c9435c752cc9a19fb%3A1401635783&click_sum=df6f41bd&ref=shop_home_active_26&crt=1", name: "SabreWorkshop" }
         ],
     },
     {
@@ -1822,6 +1837,8 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/shop/PetersabersWorkshop/",
                 name: "PetersabersWorkshop",
             },
+            { type: "Card", url: "https://www.etsy.com/listing/1777693301/armada-objective-card-deck?click_key=bc7d32a8b1901a008a58139fdb9c2118303a51ea%3A1777693301&click_sum=58f5854c&ref=shop_home_active_6", name: "CloneWares - Objectives" },
+            { type: "Card", url: "https://www.etsy.com/listing/1777779667/armada-damage-deck?click_key=b71f753b146820b9f7d78c941065b566573b9d15%3A1777779667&click_sum=bc6590f4&ref=shop_home_active_7", name: "CloneWares - Damage" }
         ],
     },
     {
@@ -1849,7 +1866,8 @@ const resources: Entity[] = [
                 type: "Base Token",
                 url: "https://www.etsy.com/ca/listing/1797983185/star-wars-armada-compatible-blank-xlhuge",
                 name: "YourArtfulEndeavors (Huge)"
-            }
+            },
+            { type: "Base Token", url: "https://www.etsy.com/listing/1631464031/rapid-reinforcements-card-squadron-token?click_key=815d3bdc83e5348997bc78f148e4ac2693a6518d%3A1631464031&click_sum=1ec72ee9&ref=shop_home_active_4&crt=1", name: "CloneWares" }
         ],
     },
     {
@@ -2142,7 +2160,10 @@ const resources: Entity[] = [
                 type: "Product",
                 url: "https://www.etsy.com/shop/boardgamegoodies/?etsrc=sdt&section_id=37893068",
                 name: "BoardGameGoodies"
-            }
+            },
+            { type: "Product", url: "https://www.hiddenforestgaming.com/collections/x-wing-and-armada/products/hiddenforest-space-gaming-mat-fire-planet-mustafar?variant=16033036369954", name: "HFG Fire Planet" },
+            { type: "Product", url: "https://www.hiddenforestgaming.com/collections/x-wing-and-armada/products/hiddenforest-space-gaming-mat-ice-planet-hoth?variant=16033092206626", name: "HFG Ice Planet" },
+            { type: "Product", url: "https://www.hiddenforestgaming.com/collections/x-wing-and-armada/products/space-gaming-mat?variant=6953475244066", name: "HFG Space" }
         ]
     },
     {
@@ -2156,14 +2177,14 @@ const resources: Entity[] = [
                 name: "Mel Miniatures"
             },
             {
-                type: "Free STL", 
-                url: "https://www.thingiverse.com/thing:6772043", 
-                name: "TzarFenix" 
+                type: "Free STL",
+                url: "https://www.thingiverse.com/thing:6772043",
+                name: "TzarFenix"
             },
             {
-                type: "Model", 
-                url: "https://pulsefiredgaming.etsy.com/listing/1791167768/rogue-yt-2400-light-freighter-irregular", 
-                name: "Pulsefired Gaming" 
+                type: "Model",
+                url: "https://pulsefiredgaming.etsy.com/listing/1791167768/rogue-yt-2400-light-freighter-irregular",
+                name: "Pulsefired Gaming"
             }
         ]
     },
@@ -2183,9 +2204,9 @@ const resources: Entity[] = [
                 name: "Mel Miniatures"
             },
             {
-                type: "Model", 
-                url: "https://pulsefiredgaming.etsy.com/listing/1805365325/rogue-yt-1300-light-freighter-irregular", 
-                name: "Pulsefired Gaming" 
+                type: "Model",
+                url: "https://pulsefiredgaming.etsy.com/listing/1805365325/rogue-yt-1300-light-freighter-irregular",
+                name: "Pulsefired Gaming"
             }
         ]
     },
@@ -2195,14 +2216,14 @@ const resources: Entity[] = [
         image: "https://spikeybits.com/wp-content/uploads/2018/12/IG2000-XWM-e1456876264955.jpg",
         items: [
             {
-                type: "Free STL", 
-                url: "https://makerworld.com/en/models/720533", 
-                name: "MormegilSC" 
+                type: "Free STL",
+                url: "https://makerworld.com/en/models/720533",
+                name: "MormegilSC"
             },
             {
-                type: "Paid STL", 
-                url: "https://cults3d.com/en/3d-model/game/aggressor-class-fighter-star-wars-armada", 
-                name: "Tev'an shipyards" 
+                type: "Paid STL",
+                url: "https://cults3d.com/en/3d-model/game/aggressor-class-fighter-star-wars-armada",
+                name: "Tev'an shipyards"
             },
             {
                 type: "Model",
@@ -2239,14 +2260,14 @@ const resources: Entity[] = [
         image: "https://cdn.cara.app/cdn-cgi/image/width=1200/production/posts/e02d407f-5aba-4234-94d6-4600ed1d21e0/JB%20Casacop-GhZZuDIF9lOTBuoTcOHyL-Gar_Saxon_01.jpg",
         items: [
             {
-                type: "Free STL", 
-                url: "https://www.thingiverse.com/thing:6749845", 
-                name: "TzarFenix" 
+                type: "Free STL",
+                url: "https://www.thingiverse.com/thing:6749845",
+                name: "TzarFenix"
             },
             {
-                type: "Model", 
-                url: "https://pulsefiredgaming.etsy.com/listing/1788066485/mandalorian-gauntlet-komrk-fighter", 
-                name: "Pulsefired Gaming" 
+                type: "Model",
+                url: "https://pulsefiredgaming.etsy.com/listing/1788066485/mandalorian-gauntlet-komrk-fighter",
+                name: "Pulsefired Gaming"
             }
         ],
         description: ""
@@ -2257,9 +2278,9 @@ const resources: Entity[] = [
         image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a686adef-a30d-4e01-a848-e061b4ee28f7/dbuhwwz-623128aa-4460-4b82-8f91-2eac88bcd6f2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E2ODZhZGVmLWEzMGQtNGUwMS1hODQ4LWUwNjFiNGVlMjhmN1wvZGJ1aHd3ei02MjMxMjhhYS00NDYwLTRiODItOGY5MS0yZWFjODhiY2Q2ZjIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wkwEAFRKz6NpZcovwWMqUYcQOq2CfkV9aUARvpTmpZE",
         items: [
             {
-                type: "Model", 
-                url: "https://pulsefiredgaming.etsy.com/listing/1791171056/rogue-hwk-290-light-freighter-irregular", 
-                name: "Pulsefired Gaming" 
+                type: "Model",
+                url: "https://pulsefiredgaming.etsy.com/listing/1791171056/rogue-hwk-290-light-freighter-irregular",
+                name: "Pulsefired Gaming"
             }
         ],
         description: "No models available at this time"
@@ -2270,9 +2291,9 @@ const resources: Entity[] = [
         image: "https://i.redd.it/just-wanted-to-throw-some-love-to-my-favorite-star-wars-v0-9v8j66yuex8a1.png?width=1906&format=png&auto=webp&s=ac463ff0e10b7838dc629b1a7dd7cc8eac10355a",
         items: [
             {
-                type: "Model", 
-                url: "https://pulsefiredgaming.etsy.com/listing/1805368791/rogue-scurrg-h-6-irregular-starfighter", 
-                name: "Pulsefired Gaming" 
+                type: "Model",
+                url: "https://pulsefiredgaming.etsy.com/listing/1805368791/rogue-scurrg-h-6-irregular-starfighter",
+                name: "Pulsefired Gaming"
             }
         ],
         description: "No models available at this time"
