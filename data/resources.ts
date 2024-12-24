@@ -53,6 +53,7 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-acclamator-assault-ship",
                 name: "Mel Miniatures",
             },
+            { type: "Model", url: "https://www.etsy.com/ca/listing/1837836865/sw-armada-compatible-acclimator-proxy", name: "YourArtfulEndeavors" },
             { type: "Model", url: "https://www.etsy.com/listing/1434129161/acclamator-imp-gar-for-star-wars-armada?click_key=376f302886cee7aa013f25e57fc4c5fb69b8934f%3A1434129161&click_sum=ae8efb8d&ref=shop_home_active_29", name: "SabreWorkshop" }
         ],
     },
@@ -131,6 +132,7 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-2x-consular-republic-cruiser",
                 name: "Mel Miniatures",
             },
+            { type: "Model", url: "https://www.etsy.com/ca/listing/1825274446/sw-armada-compatible-consular-proxy", name: "YourArtfulEndeavors" }
         ],
     },
     {
@@ -197,6 +199,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1795718108/venator-star-destroyer",
                 name: "BensArmadaShipCards"
             },
+            { type: "Model", url: "https://www.etsy.com/ca/listing/1823633830/sw-armada-compatible-venator-proxy", name: "YourArtfulEndeavors" },
             { type: "Model", url: "https://www.etsy.com/listing/1776916108/star-wars-armada-venator-star-destroyer?click_key=a3f91939303b5f06e4ea46f7bca020ac43a176cd%3A1776916108&click_sum=3aaf0e87&ref=shop_home_active_1&pro=1&variation0=4777709522", name: "Cassie Renee Art" },
             { type: "Model", url: "https://www.etsy.com/listing/1788015240/republic-venator-star-destroyer-updated?click_key=6832a0a77efe9af7957d4c542bb0f57d970aa746%3A1788015240&click_sum=6581e716&ref=shop_home_active_12&crt=1", name: "SabreWorkshop" }
         ],
@@ -259,6 +262,7 @@ const resources: Entity[] = [
                 name: "Memnoch Manufacturing"
 
             },
+            { type: "Model", url: "https://www.etsy.com/ca/listing/1823639194/sw-armada-compatible-victory-proxy", name: "YourArtfulEndeavors" },
             { type: "Model", url: "https://www.etsy.com/listing/1782906968/star-wars-armada-imperial-victory-star?click_key=6d420b8477e60d4ebc7ac7ee9e1a712308be125b%3A1782906968&click_sum=368409e3&ref=shop_home_active_8&pro=1&variation0=4781522154", name: "Cassie Renee Art" }
         ],
     },
@@ -334,6 +338,7 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-munificent-frigate",
                 name: "Mel Miniatures",
             },
+            { type: "Model", url: "https://www.etsy.com/ca/listing/1825287730/sw-armada-compatible-munificent-proxy", name: "YourArtfulEndeavors" },
             { type: "Model", url: "https://www.etsy.com/listing/1776824608/munificent-class-star-frigate-for-star?click_key=b9931c27bfc95e5dbf8ad0bc5a4c6010f883d368%3A1776824608&click_sum=5855db0e&ref=shop_home_active_40&crt=1", name: "SabreWorkshop" }
         ],
     },
@@ -363,6 +368,7 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-providence-destroyer-invisible-hand",
                 name: "Mel Miniatures",
             },
+            { type: "Model", url: "https://www.etsy.com/ca/listing/1839485937/sw-armada-compatible-providence-proxy", name: "YourArtfulEndeavors" },
             { type: "Model", url: "https://www.etsy.com/listing/1791026255/providence-class-dreadnought-for-star?click_key=2babbb0d12b38e78a03adc18bc71781ef5180d84%3A1791026255&click_sum=3098bf22&ref=shop_home_active_14&crt=1", name: "SabreWorkshop" },
             { type: "Model", url: "https://www.etsy.com/listing/1405442461/star-wars-armada-rebel-one-providence?click_key=af2b8185ab2cc0d3a8919b61e5a0d2ae0b211461%3A1405442461&click_sum=e037c36d&ref=shop_home_active_9&sca=1", name: "BossnossCreations" }
         ],
@@ -388,6 +394,7 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-recusant-destroyer",
                 name: "Mel Miniatures",
             },
+            { type: "Model", url: "https://www.etsy.com/ca/listing/1839485027/sw-armada-compatible-recusant-proxy", name: "YourArtfulEndeavors" },
             { type: "Model", url: "https://www.etsy.com/listing/1747617748/recusant-light-destroyer-for-star-wars?click_key=7902a413b191f3a20f4a75e9c0f3f5b955def173%3A1747617748&click_sum=12be6c85&ref=shop_home_active_39", name: "SabreWorkshop" }
         ],
     },
@@ -749,6 +756,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1416875886",
                 name: "SabreWorkshop",
             },
+            { type: "Model", url: "https://www.etsy.com/ca/listing/1839476965/sw-armada-compatible-gladiator-proxy", name: "YourArtfulEndeavors" }
         ],
     },
     {
@@ -877,6 +885,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1417370092",
                 name: "SabreWorkshop",
             },
+            { type: "Model", url: "https://www.etsy.com/listing/1819974839/star-wars-armada-imperial-interdictor-or?click_key=43a24ebfed3eb0c72e2a1592107ccd74d70dedfe%3A1819974839&click_sum=36d0f83a&ref=shop_home_active_41", name: "Cassie Renee Art" }
 
         ],
     },
@@ -1656,7 +1665,8 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-12x-b-wing?variant=45493209202915",
                 name: "Mel Miniatures"
-            }
+            },
+            { type: "Free STL", url: "https://makerworld.com/en/models/787873#profileId-725809", name: "MormegilSC" }
         ],
     },
     {
@@ -1905,7 +1915,8 @@ const resources: Entity[] = [
                 type: "Product",
                 url: "https://www.etsy.com/listing/1032372344/star-wars-armada-ship-set?click_key=f77b6a8c45e43c3d71b0145f3bbbf9cea36e6e56%3A1032372344&click_sum=e990dd0b&ref=shop_home_active_4&crt=1",
                 name: "MethodicalGeek"
-            }
+            },
+            { type: "Product", url: "https://www.etsy.com/ca/listing/1800939891/armada-compatible-stands-reg-size", name: "YourArtfulEndeavors" }
         ],
     },
     {
@@ -2281,7 +2292,8 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://pulsefiredgaming.etsy.com/listing/1791171056/rogue-hwk-290-light-freighter-irregular",
                 name: "Pulsefired Gaming"
-            }
+            },
+            { type: "Free STL", url: "https://makerworld.com/en/models/749160#profileId-682613", name: "MormegilSC" }
         ],
         description: "No models available at this time"
     },
