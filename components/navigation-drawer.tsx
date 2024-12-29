@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 
 const navigationItems = [
     { title: "Home", href: "/" },
-    // { title: "Fleet Builder", href:"/builder" },
+    { title: "Fleet Builder", href: "https://builder.swarmada.wiki/" },
     { title: "Resources", href: "/resources" },
     // { title: "Posts", href: "/posts" }
 ]

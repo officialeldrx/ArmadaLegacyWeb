@@ -2295,7 +2295,6 @@ const resources: Entity[] = [
             },
             { type: "Free STL", url: "https://makerworld.com/en/models/749160#profileId-682613", name: "MormegilSC" }
         ],
-        description: "No models available at this time"
     },
     {
         name: "Scurrg H-6",
@@ -2308,7 +2307,6 @@ const resources: Entity[] = [
                 name: "Pulsefired Gaming"
             }
         ],
-        description: "No models available at this time"
     },
     {
         name: "YV-666",
