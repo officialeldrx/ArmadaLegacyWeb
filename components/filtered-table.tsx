@@ -100,7 +100,7 @@ export function FilteredTable() {
 
 
     return (
-        <div className="flex flex-col h-full space-y-4 max-w-[1024px] w-full">
+        <div className="flex flex-col h-full space-y-4 max-w-[1024px] w-full px-3">
             <div className="flex gap-4 flex-wrap">
                 <div className="relative w-full flex-3">
                     <Input
@@ -137,9 +137,9 @@ export function FilteredTable() {
                     {filteredEntities.map((entity) => (
                         <div key={entity.name} className="shadow-lg rounded-md overflow-clip bg-card pb-1 lg:hover:scale-[1.01] transition duration-400 ease-in-out will-change-transform">
                             <div className="mb-4">
-                                {entity.image ? <img src={entity.image} alt="" style={{width: '100%', height: 280, objectFit: 'cover'}}/> : null}
+                                {entity.image ? <img src={entity.image} alt="" style={{ width: '100%', height: 280, objectFit: 'cover' }} /> : null}
                                 <h1 className="mx-4">{entity.name}</h1>
-                                
+
                                 <div className="px-4"><span className="font-bold">Category:</span> {entity.category}</div>
                                 <div className={`px-4 ${!entity.faction ? 'hidden' : ''}`}><span className="font-bold">Faction:</span> {entity.faction?.join(", ") || "N/A"}</div>
                                 <div className={`px-4 ${!entity.description ? 'hidden' : ''}`}>Note: {entity.description}</div>
