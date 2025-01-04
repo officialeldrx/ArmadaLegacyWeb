@@ -1877,6 +1877,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/ca/listing/1797983185/star-wars-armada-compatible-blank-xlhuge",
                 name: "YourArtfulEndeavors (Huge)"
             },
+            { type: "Base Token", url: "https://cults3d.com/en/3d-model/game/star-wars-armada-shiptokens-base-game-legacy-legends-private-use", name: "Wobbleking" },
             { type: "Base Token", url: "https://www.etsy.com/listing/1631464031/rapid-reinforcements-card-squadron-token?click_key=815d3bdc83e5348997bc78f148e4ac2693a6518d%3A1631464031&click_sum=1ec72ee9&ref=shop_home_active_4&crt=1", name: "CloneWares" }
         ],
     },
@@ -1916,7 +1917,8 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1032372344/star-wars-armada-ship-set?click_key=f77b6a8c45e43c3d71b0145f3bbbf9cea36e6e56%3A1032372344&click_sum=e990dd0b&ref=shop_home_active_4&crt=1",
                 name: "MethodicalGeek"
             },
-            { type: "Product", url: "https://www.etsy.com/ca/listing/1800939891/armada-compatible-stands-reg-size", name: "YourArtfulEndeavors" }
+            { type: "Product", url: "https://www.etsy.com/ca/listing/1800939891/armada-compatible-stands-reg-size", name: "YourArtfulEndeavors" },
+            { type: "Free STL", url: "https://cults3d.com/en/3d-model/game/star-wars-armada-ultimate-ship-base-collection", name: "Wobbleking" }
         ],
     },
     {
