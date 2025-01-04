@@ -34,7 +34,7 @@ function MultiSelect({ options, selected, onChange, placeholder }: { options: an
     return (
         <div className="relative flex-1" ref={ref}>
             <button
-                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-left bg-card border shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2"
+                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-left bg-card border shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2 truncate"
             >
                 <span>{selected.length > 0 ? `${selected.length} selected` : placeholder}</span>
                 <ChevronDown className="h-4 w-4 text-gray-500" />
