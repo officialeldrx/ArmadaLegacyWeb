@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { NavigationDrawer } from "@/components/navigation-drawer"
 import { Analytics } from "@vercel/analytics/react"
+import Image from 'next/image'
 
 const optima = localFont({
     src: "./fonts/optima.woff",
@@ -40,8 +41,9 @@ export default function RootLayout({
             </head>
             
             <body className={`${title.variable} ${optima.variable} ${fighter.variable} ${logo.variable} antialiased`}>
+
                 <NavigationDrawer />
-                <main className="h-full w-full pt-16 overflow-y-auto flex justify-center">
+                <main className="h-screen w-full pt-16 overflow-y-auto flex justify-center z-10">
                     {children}
                 </main>
             </body>

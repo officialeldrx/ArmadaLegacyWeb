@@ -4,7 +4,7 @@
 
 @layer base {
     :root {
-        --background: 60 20% 99%;
+        --background: 60 20% 97%;
         --foreground: 0 6% 13%;
         --card: 60 20% 99%;
         --card-foreground: 0 6% 13%;
@@ -48,13 +48,16 @@
     } */
 }
 
-body {
-    font-family: var(--optima);
+/* body {
     color: hsl(var(--foreground));
-    background: url('background.jpg');
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
-}
+} */
 
 h1 {
     font-family: var(--logo);
@@ -69,14 +72,13 @@ h1 {
     /* Positioning and spacing */
     position: relative;
     /* Needed for ::before to position correctly */
-    margin-top: 1rem;
     /* mt-4 */
     text-align: center;
     /* text-center */
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
     /* pt-1 */
     line-height: 1;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
     /* my-[1px] */
     margin-top: 0.5em;
 }
