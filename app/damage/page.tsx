@@ -111,8 +111,8 @@ export default function CardGame() {
                                     <Image
                                         src="/cards/back.png"
                                         alt="Face down cards"
-                                        width={70}
-                                        height={100}
+                                        width={600}
+                                        height={836}
                                         className="w-full h-auto rounded-sm"
                                     />
                                     <div className="absolute top-2 right-2 text-white p-2 rounded-full bg-black shadow bg-opacity-70">
@@ -152,8 +152,8 @@ export default function CardGame() {
                                     <Image
                                         src={card.imageUrl}
                                         alt="Card"
-                                        width={70}
-                                        height={100}
+                                        width={600}
+                                        height={836}
                                         className="w-full h-auto rounded-sm"
                                     />
                                     <div className="absolute inset-x-2 bottom-2 flex justify-between py-1 px-2 bg-black bg-opacity-70 rounded-lg">
