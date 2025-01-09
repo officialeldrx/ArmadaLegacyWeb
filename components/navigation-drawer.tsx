@@ -11,7 +11,7 @@ const navigationItems = [
     { title: "Home", href: "/" },
     { title: "Fleet Builder", href: "https://builder.swarmada.wiki/" },
     { title: "Resources", href: "/resources" },
-    // { title: "Damage Deck", href: "/damage" },np
+    { title: "Damage Deck", href: "/damage" },
     // { title: "Posts", href: "/posts" }
 ]
 
