@@ -136,7 +136,7 @@ export default function CardGame() {
                                     value={section.name}
                                     readOnly
                                     style={{ fontFamily: 'var(--title)' }}
-                                    className="text-3xl pt-2.5 mr-2 w-full border-transparent shadow-none ring-0 focus-visible:ring-0"
+                                    className="text-3xl pt-2.5 mr-2 w-full px-0 border-transparent shadow-none ring-0 focus-visible:ring-0"
                                 />
                             )}
                             <div className="flex gap-2">

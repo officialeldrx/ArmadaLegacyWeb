@@ -29,8 +29,8 @@ export function PeekTopCardsDialog({ isOpen, onClose, cards, onPickCard }: PeekT
                 <DialogHeader>
                     <DialogTitle>Pick a card from the top 4</DialogTitle>
                 </DialogHeader>
-                <div className="flex-grow overflow-y-auto">
-                    <div className="grid grid-cols-2 gap-4 py-4">
+                <div className="flex-grow overflow-y-auto border-t border-b">
+                    <div className="grid grid-cols-2 gap-4 p-4">
                         {cards.map((card) => (
                             <div
                                 key={card.id}
@@ -49,7 +49,7 @@ export function PeekTopCardsDialog({ isOpen, onClose, cards, onPickCard }: PeekT
                         ))}
                     </div>
                 </div>
-                <DialogFooter className="mt-4">
+                <DialogFooter className="mt-0">
                     <Button onClick={handlePickCard} disabled={!selectedCard}>
                         Pick Card
                     </Button>
@@ -58,3 +58,4 @@ export function PeekTopCardsDialog({ isOpen, onClose, cards, onPickCard }: PeekT
         </Dialog>
     );
 }
+
