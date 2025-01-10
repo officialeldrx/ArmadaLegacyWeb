@@ -48,8 +48,8 @@ export function FaceDownCardsDialog({ isOpen, onClose, cards, onFlipCards }: Fac
                             <Image
                                 src={card.imageUrl}
                                 alt="Card"
-                                width={70}
-                                height={100}
+                                width={600}
+                                height={836}
                                 className="w-full h-auto"
                             />
                             <Checkbox

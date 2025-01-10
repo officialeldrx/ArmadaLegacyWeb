@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Checkbox } from "@/components/ui/checkbox";
 import Image from 'next/image'
-import { Trash2, RotateCcw, Plus, Eye } from 'lucide-react';
+import { Trash2, RotateCcw, Plus, Eye, RefreshCw, Pencil, X, Check } from 'lucide-react';
 import { useCardGame, Card as GameCard } from '@/hooks/useCardGame';
 import { FaceDownCardsDialog } from '@/components/FaceDownCardsDialog';
 import { PeekTopCardsDialog } from '@/components/PeekTopCardsDialog';
@@ -20,12 +20,15 @@ export default function CardGame() {
         sections,
         addSection,
         addCard,
+        editSection,
         discardCard,
         flipFaceDownCard,
         flipFaceUpCard,
         flipSelectedFaceDownCards,
         peekTopCards,
-        pickCardFromTop
+        pickCardFromTop,
+        startNewGame,
+        deleteSection
     } = useCardGame();
     const [newSectionName, setNewSectionName] = useState('');
     const [faceDownDialogOpen, setFaceDownDialogOpen] = useState(false);
@@ -33,13 +36,13 @@ export default function CardGame() {
     const [currentSection, setCurrentSection] = useState<string | null>(null);
     const [topCards, setTopCards] = useState<GameCard[]>([]);
     const [isGeneralDodonna, setIsGeneralDodonna] = useState(false);
+    const [editingSectionId, setEditingSectionId] = useState<string | null>(null);
+    const [editingSectionName, setEditingSectionName] = useState('');
 
     const handleAddSection = (e: React.FormEvent) => {
         e.preventDefault();
-        if (newSectionName.trim()) {
-            addSection(newSectionName.trim());
-            setNewSectionName('');
-        }
+        addSection(newSectionName.trim() || 'Ship ' + sections.length);
+        setNewSectionName('');
     };
 
     const openFaceDownCardsDialog = (sectionId: string) => {
@@ -58,13 +61,36 @@ export default function CardGame() {
         }
     };
 
+    const startEditingSection = (sectionId: string, currentName: string) => {
+        setEditingSectionId(sectionId);
+        setEditingSectionName(currentName);
+    };
+
+    const saveEditedSection = () => {
+        if (editingSectionId) {
+            editSection(editingSectionId, editingSectionName);
+            setEditingSectionId(null);
+            setEditingSectionName('');
+        }
+    };
+
+    const cancelEditingSection = () => {
+        setEditingSectionId(null);
+        setEditingSectionName('');
+    };
+
     return (
         <div className="p-4 flex flex-col gap-4 w-full max-w-[1024px]">
             <Card className='w-full'>
-                <CardHeader className='flex flex-row items-center justify-center gap-2'>
-                    <h2 className="text-3xl">Deck: {deck.length}</h2>
-                    <h2 className='text-3xl !-mt-1.5'>|</h2>
-                    <h2 className="text-3xl !mt-0">Discard: {discardPile.length}</h2>
+                <CardHeader className='flex flex-row items-center justify-between gap-2'>
+                    <div className="flex items-center gap-2">
+                        <h2 className="text-3xl">Deck: {deck.length}</h2>
+                        <h2 className='text-3xl !-mt-1.5'>|</h2>
+                        <h2 className="text-3xl !mt-0">Discard: {discardPile.length}</h2>
+                    </div>
+                    <Button variant="outline" onClick={startNewGame} className="ml-auto">
+                        <RefreshCw className="mr-2 h-4 w-4" /> New Game
+                    </Button>
                 </CardHeader>
 
                 <CardContent>
@@ -79,16 +105,16 @@ export default function CardGame() {
                         </label>
                     </div>
 
-                    <form onSubmit={handleAddSection} className="flex gap-2">
+                    <form onSubmit={handleAddSection} className="flex gap-2 relative">
                         <Input
                             type="text"
                             value={newSectionName}
                             onChange={(e) => setNewSectionName(e.target.value)}
-                            placeholder="Enter Ship Name"
-                            className="flex-grow"
+                            placeholder={'Ship ' + sections.length}
+                            className="flex-grow rounded-full"
                         />
-                        <Button type="submit" className='p-2'>
-                            <Plus />
+                        <Button variant="link" className='p-2 right-2 absolute rounded-full'>
+                            <Plus className='w-4 h-4' />
                         </Button>
                     </form>
                 </CardContent>
@@ -97,7 +123,60 @@ export default function CardGame() {
             <div className="space-y-4 pb-4">
                 {sections.map((section) => (
                     <Card key={section.id} className="p-4">
-                        <h2 className="text-3xl font-bold mb-2 mr-auto w-full text-center">{section.name}</h2>
+                        <div className="flex items-center justify-between mb-2">
+                            {editingSectionId === section.id ? (
+                                <Input
+                                    value={editingSectionName}
+                                    onChange={(e) => setEditingSectionName(e.target.value)}
+                                    style={{ fontFamily: 'var(--title)' }}
+                                    className="text-3xl pt-2.5 mr-2 w-fullshadow-none ring-0 focus-visible:ring-0"
+                                />
+                            ) : (
+                                <Input
+                                    value={section.name}
+                                    readOnly
+                                    style={{ fontFamily: 'var(--title)' }}
+                                    className="text-3xl pt-2.5 mr-2 w-full border-transparent shadow-none ring-0 focus-visible:ring-0"
+                                />
+                            )}
+                            <div className="flex gap-2">
+                                {editingSectionId === section.id ? (
+                                    <>
+                                        <Button
+                                            size="sm"
+                                            variant="outline"
+                                            onClick={saveEditedSection}
+                                        >
+                                            <Check className="h-4 w-4" />
+                                        </Button>
+                                        <Button
+                                            size="sm"
+                                            variant="outline"
+                                            onClick={cancelEditingSection}
+                                        >
+                                            <X className="h-4 w-4" />
+                                        </Button>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Button
+                                            size="sm"
+                                            variant="outline"
+                                            onClick={() => startEditingSection(section.id, section.name)}
+                                        >
+                                            <Pencil className="h-4 w-4" />
+                                        </Button>
+                                        <Button
+                                            size="sm"
+                                            variant="outline"
+                                            onClick={() => deleteSection(section.id)}
+                                        >
+                                            <Trash2 className="h-4 w-4" />
+                                        </Button>
+                                    </>
+                                )}
+                            </div>
+                        </div>
 
                         <div className="grid grid-cols-2 md:grid-cols-4 sm:grid-cols-3 items-center gap-4">
                             {!section.faceDownCards.length && !section.faceUpCards.length && (

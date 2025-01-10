@@ -42,7 +42,7 @@ export default function RootLayout({
             <body className={`${title.variable} ${optima.variable} ${fighter.variable} ${logo.variable} antialiased`}>
 
                 <NavigationDrawer />
-                <main className="h-screen w-full pt-[53px] overflow-y-auto flex justify-center z-10">
+                <main className="h-screen w-full pt-16 overflow-y-auto flex justify-center z-10">
                     {children}
                 </main>
             </body>

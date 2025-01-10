@@ -41,8 +41,8 @@ export function PeekTopCardsDialog({ isOpen, onClose, cards, onPickCard }: PeekT
                                 <Image
                                     src={card.imageUrl}
                                     alt="Card"
-                                    width={70}
-                                    height={100}
+                                    width={600}
+                                    height={836}
                                     className="w-full h-auto"
                                 />
                             </div>

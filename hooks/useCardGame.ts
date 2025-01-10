@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export interface Card {
     id: string;
@@ -70,26 +70,76 @@ const initialDeck: Card[] = [
     { id: '52', imageUrl: '/cards/thruster_fissure.jpg', faceUp: false },
 ];
 
-function shuffleDeck<T>(deck: T[]): T[] {
+function shuffleDeck<T>(deck: T[], seed: number): T[] {
     const shuffled = [...deck];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    let currentIndex = shuffled.length, randomIndex;
+
+    // Simple deterministic random number generator
+    let localSeed = seed;
+    const random = () => {
+        localSeed = (localSeed * 1664525 + 1013904223) % 2 ** 32;
+        return localSeed / 2 ** 32;
+    };
+
+    while (currentIndex != 0) {
+        randomIndex = Math.floor(random() * currentIndex);
+        currentIndex--;
+        [shuffled[currentIndex], shuffled[randomIndex]] = [
+            shuffled[randomIndex], shuffled[currentIndex]];
     }
+
     return shuffled;
 }
 
-export function useCardGame() {
-    const [deck, setDeck] = useState<Card[]>([]);
-    const [discardPile, setDiscardPile] = useState<Card[]>([]);
-    const [sections, setSections] = useState<Section[]>([]);
+// Custom hook for persistent state
+function usePersistentState<T>(key: string, initialValue: T): [T, React.Dispatch<React.SetStateAction<T>>, number] {
+    const [state, setState] = useState<T>(() => {
+        if (typeof window === 'undefined') {
+            return initialValue;
+        }
+        try {
+            const item = window.localStorage.getItem(key);
+            return item ? JSON.parse(item) : initialValue;
+        } catch (error) {
+            console.error('Error reading from localStorage:', error);
+            return initialValue;
+        }
+    });
+
+    const [seed] = useState(() => Math.floor(Math.random() * 1000000));
+
+    const isFirstRender = useRef(true);
 
     useEffect(() => {
-        setDeck(shuffleDeck(initialDeck));
-    }, []);
+        if (!isFirstRender.current) {
+            try {
+                window.localStorage.setItem(key, JSON.stringify(state));
+            } catch (error) {
+                console.error('Error writing to localStorage:', error);
+            }
+        } else {
+            isFirstRender.current = false;
+        }
+    }, [key, state]);
+
+    return [state, setState, seed];
+}
+
+export function useCardGame() {
+    const [deck, setDeck, seed] = usePersistentState<Card[]>('deck', shuffleDeck([...initialDeck], 0));
+    const [discardPile, setDiscardPile] = usePersistentState<Card[]>('discardPile', []);
+    const [sections, setSections] = usePersistentState<Section[]>('sections', []);
 
     const addSection = (name: string) => {
         setSections([...sections, { id: Date.now().toString(), name, faceUpCards: [], faceDownCards: [] }]);
+    };
+
+    const editSection = (id: string, name: string) => {
+        setSections((prevSections: Section[]) =>
+            prevSections.map((section) =>
+                section.id === id ? { ...section, name } : section
+            )
+        );
     };
 
     const addCard = (sectionId: string, faceUp: boolean) => {
@@ -97,7 +147,7 @@ export function useCardGame() {
             if (discardPile.length === 0) {
                 return;
             }
-            setDeck(shuffleDeck(discardPile));
+            setDeck(shuffleDeck(discardPile, seed));
             setDiscardPile([]);
             return;
         }
@@ -203,10 +253,22 @@ export function useCardGame() {
         ));
     };
 
+    const startNewGame = () => {
+        const newDeck = shuffleDeck([...initialDeck], seed);
+        setDeck(newDeck);
+        setDiscardPile([]);
+        setSections([]);
+    };
+
+    const deleteSection = (sectionId: string) => {
+        setSections(prevSections => prevSections.filter(section => section.id !== sectionId));
+    };
+
     return {
         deck,
         discardPile,
         sections,
+        editSection,
         addSection,
         addCard,
         discardCard,
@@ -214,7 +276,9 @@ export function useCardGame() {
         flipFaceUpCard,
         flipSelectedFaceDownCards,
         peekTopCards,
-        pickCardFromTop
+        pickCardFromTop,
+        startNewGame,
+        deleteSection
     };
 }
 
