@@ -85,11 +85,11 @@ export default function CardGame() {
                 <CardHeader className='flex flex-row items-center justify-between gap-2'>
                     <div className="flex items-center gap-2">
                         <h2 className="text-3xl">Deck: {deck.length}</h2>
-                        <h2 className='text-3xl !-mt-1.5'>|</h2>
+                        <h2 className='text-3xl !-mt-1.5 text-center'>|</h2>
                         <h2 className="text-3xl !mt-0">Discard: {discardPile.length}</h2>
                     </div>
-                    <Button variant="outline" onClick={startNewGame} className="ml-auto">
-                        <RefreshCw className="mr-2 h-4 w-4" /> New Game
+                    <Button variant="outline" onClick={startNewGame} className="!mt-0">
+                        <RefreshCw className="h-4 w-4" />
                     </Button>
                 </CardHeader>
 
