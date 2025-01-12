@@ -28,7 +28,8 @@ export default function CardGame() {
         peekTopCards,
         pickCardFromTop,
         startNewGame,
-        deleteSection
+        deleteSection,
+        closePeekDialog
     } = useCardGame();
     const [newSectionName, setNewSectionName] = useState('');
     const [faceDownDialogOpen, setFaceDownDialogOpen] = useState(false);
@@ -290,7 +291,10 @@ export default function CardGame() {
 
             <PeekTopCardsDialog
                 isOpen={peekDialogOpen}
-                onClose={() => setPeekDialogOpen(false)}
+                onClose={(cardId: string) => {
+                    setPeekDialogOpen(false);
+                    closePeekDialog(cardId);
+                }}
                 cards={topCards}
                 onPickCard={handlePickCard}
             />

@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 interface PeekTopCardsDialogProps {
     isOpen: boolean;
-    onClose: () => void;
+    onClose: (cardId: string) => void;
     cards: Card[];
     onPickCard: (cardId: string) => void;
 }
@@ -19,12 +19,13 @@ export function PeekTopCardsDialog({ isOpen, onClose, cards, onPickCard }: PeekT
     const handlePickCard = () => {
         if (selectedCard) {
             onPickCard(selectedCard);
-            onClose();
+            setSelectedCard(null);
+            onClose(selectedCard);
         }
     };
 
     return (
-        <Dialog open={isOpen} onOpenChange={onClose}>
+        <Dialog open={isOpen} onOpenChange={() => onClose('')}>
             <DialogContent className="sm:max-w-[425px] flex flex-col h-[80vh]">
                 <DialogHeader>
                     <DialogTitle>Pick a card from the top 4</DialogTitle>

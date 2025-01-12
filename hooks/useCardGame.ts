@@ -91,6 +91,8 @@ function shuffleDeck<T>(deck: T[], seed: number): T[] {
     return shuffled;
 }
 
+const getRandomIndex = (max: number) => Math.floor(Math.random() * max);
+
 // Custom hook for persistent state
 function usePersistentState<T>(key: string, initialValue: T): [T, React.Dispatch<React.SetStateAction<T>>, number] {
     const [state, setState] = useState<T>(() => {
@@ -125,10 +127,13 @@ function usePersistentState<T>(key: string, initialValue: T): [T, React.Dispatch
     return [state, setState, seed];
 }
 
+
+//TODO when peeking cards with dodana, if there are less than 4 cards in the deck the deck should b
 export function useCardGame() {
     const [deck, setDeck, seed] = usePersistentState<Card[]>('deck', shuffleDeck([...initialDeck], 0));
     const [discardPile, setDiscardPile] = usePersistentState<Card[]>('discardPile', []);
     const [sections, setSections] = usePersistentState<Section[]>('sections', []);
+    const [peekedCards, setPeekedCards] = useState<Card[]>([]);
 
     const addSection = (name: string) => {
         setSections([...sections, { id: Date.now().toString(), name, faceUpCards: [], faceDownCards: [] }]);
@@ -143,26 +148,39 @@ export function useCardGame() {
     };
 
     const addCard = (sectionId: string, faceUp: boolean) => {
-        if (deck.length === 0) {
-            if (discardPile.length === 0) {
-                return;
-            }
-            setDeck(shuffleDeck(discardPile, seed));
-            setDiscardPile([]);
+        if (deck.length === 0 && discardPile.length === 0) {
             return;
         }
 
-        const [card, ...remainingDeck] = deck;
-        setDeck(remainingDeck);
+        let updatedDeck = [...deck];
+        let updatedDiscardPile = [...discardPile];
 
-        setSections(sections.map(section =>
+        if (updatedDeck.length === 0) {
+            updatedDeck = shuffleDeck(updatedDiscardPile, seed);
+            updatedDiscardPile = [];
+        }
+
+        const [card, ...remainingDeck] = updatedDeck;
+
+        const updatedSections = sections.map(section =>
             section.id === sectionId
                 ? faceUp
-                    ? { ...section, faceUpCards: [...section.faceUpCards, { ...card, faceUp: true }] }
-                    : { ...section, faceDownCards: [...section.faceDownCards, { ...card, faceUp: false }] }
+                    ? {
+                        ...section,
+                        faceUpCards: [...section.faceUpCards, { ...card, faceUp: true }],
+                    }
+                    : {
+                        ...section,
+                        faceDownCards: [...section.faceDownCards, { ...card, faceUp: false }],
+                    }
                 : section
-        ));
+        );
+
+        setDeck(remainingDeck);
+        setDiscardPile(updatedDiscardPile);
+        setSections(updatedSections);
     };
+
 
     const discardCard = (sectionId: string, cardId: string, isFaceUp: boolean) => {
         setSections(sections.map(section => {
@@ -188,11 +206,12 @@ export function useCardGame() {
     const flipFaceDownCard = (sectionId: string) => {
         setSections(sections.map(section => {
             if (section.id === sectionId && section.faceDownCards.length > 0) {
-                const [flippedCard, ...remainingFaceDownCards] = section.faceDownCards;
+                const randomIndex = getRandomIndex(section.faceDownCards.length);
+                const flippedCard = section.faceDownCards[randomIndex];
                 return {
                     ...section,
                     faceUpCards: [...section.faceUpCards, { ...flippedCard, faceUp: true }],
-                    faceDownCards: remainingFaceDownCards
+                    faceDownCards: section.faceDownCards.filter((_, index) => index !== randomIndex)
                 };
             }
             return section;
@@ -231,19 +250,48 @@ export function useCardGame() {
     };
 
     const peekTopCards = (count: number = 4): Card[] => {
-        return deck.slice(0, count);
+        let updatedDeck = [...deck];
+        let updatedDiscardPile = [...discardPile];
+
+        if (updatedDeck.length < count) {
+            updatedDeck = shuffleDeck([...updatedDeck, ...updatedDiscardPile], seed);
+            updatedDiscardPile = [];
+        }
+
+        const peekedCards = updatedDeck.slice(0, Math.min(count, updatedDeck.length));
+        updatedDeck = updatedDeck.slice(peekedCards.length);
+
+        setDeck(updatedDeck);
+        setDiscardPile(updatedDiscardPile);
+        setPeekedCards(peekedCards);
+
+        return peekedCards;
+    };
+
+
+    const closePeekDialog = (cardId: string) => {
+        console.log(cardId)
+
+        if (peekedCards.length > 0) {
+            if (cardId === '') {
+                setDeck(prevDeck => {
+                    const newDeck = [...peekedCards, ...prevDeck];
+                    return shuffleDeck(newDeck, seed);
+                });
+            }
+
+            setPeekedCards([]);
+        }
     };
 
     const pickCardFromTop = (cardId: string, sectionId: string, faceUp: boolean) => {
-        const cardIndex = deck.findIndex(card => card.id === cardId);
-        if (cardIndex === -1) return;
+        const pickedCardIndex = peekedCards.findIndex(card => card.id === cardId);
+        if (pickedCardIndex === -1) return;
 
-        const [pickedCard, ...remainingCards] = deck.slice(0, 4);
-        const newDeck = [...deck.slice(4)];
+        const pickedCard = peekedCards[pickedCardIndex];
+        const remainingPeekedCards = peekedCards.filter((_, index) => index !== pickedCardIndex);
 
-        setDeck(newDeck);
-        setDiscardPile([...discardPile, ...remainingCards]);
-
+        // Add picked card to the section
         setSections(sections.map(section =>
             section.id === sectionId
                 ? faceUp
@@ -251,6 +299,12 @@ export function useCardGame() {
                     : { ...section, faceDownCards: [...section.faceDownCards, { ...pickedCard, faceUp: false }] }
                 : section
         ));
+
+        // Move remaining peeked cards to the discard pile
+        setDiscardPile(prevDiscard => [...prevDiscard, ...remainingPeekedCards]);
+
+        // Clear peeked cards
+        setPeekedCards([]);
     };
 
     const startNewGame = () => {
@@ -258,9 +312,15 @@ export function useCardGame() {
         setDeck(newDeck);
         setDiscardPile([]);
         setSections([]);
+        setPeekedCards([]);
     };
 
     const deleteSection = (sectionId: string) => {
+        const sectionToDelete = sections.find(section => section.id === sectionId);
+        if (sectionToDelete) {
+            const cardsToDiscard = [...sectionToDelete.faceUpCards, ...sectionToDelete.faceDownCards];
+            setDiscardPile([...discardPile, ...cardsToDiscard]);
+        }
         setSections(prevSections => prevSections.filter(section => section.id !== sectionId));
     };
 
@@ -268,6 +328,7 @@ export function useCardGame() {
         deck,
         discardPile,
         sections,
+        peekedCards,
         editSection,
         addSection,
         addCard,
@@ -277,6 +338,7 @@ export function useCardGame() {
         flipSelectedFaceDownCards,
         peekTopCards,
         pickCardFromTop,
+        closePeekDialog,
         startNewGame,
         deleteSection
     };
