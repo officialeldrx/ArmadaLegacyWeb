@@ -1852,7 +1852,16 @@ const resources: Entity[] = [
         ],
     },
     {
-        name: "Base Tokens",
+        name: "Squadron Base Tokens",
+        category: "Play Material",
+        image: "https://i.etsystatic.com/22662247/r/il/219fe9/6060327466/il_570xN.6060327466_gg6j.jpg",
+        description: "",
+        items: [
+            { type: "Free STL", url: "https://cults3d.com/en/3d-model/game/star-wars-armada-squadron-fdm-dial-tokens", name: "SpaceNavy" }
+        ]
+    },
+    {
+        name: "Ship Base Tokens",
         category: "Play Material",
         image: "https://i.etsystatic.com/22662247/r/il/943ad4/6108405849/il_570xN.6108405849_11bo.jpg",
         description: "",
@@ -1947,6 +1956,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1463638156/squadron-stands-x3-compatible-with-sw",
                 name: "SabreWorkshop",
             },
+            { type: "Free STL", url: "https://cults3d.com/en/3d-model/game/star-wars-armada-fdm-squadron-bases-and-stands", name: "SpaceNavy" }
         ],
     },
     {
@@ -2090,6 +2100,7 @@ const resources: Entity[] = [
         category: "Play Material",
         image: "https://i.ebayimg.com/images/g/WuIAAOSw9xxjgCJi/s-l1200.jpg",
         items: [
+            { type: "Free STL", url: "https://cults3d.com/en/3d-model/game/star-wars-armada-fdm-printable-tools-tokens", name: "SpaceNavy" },
             {
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:970911",
@@ -2152,11 +2163,7 @@ const resources: Entity[] = [
                 url: "https://baronofdice.com/products/galactic-armada-premium-dice-set",
                 name: "BaronOfDice"
             },
-            // {
-            //     type: "Product",
-            //     url: "https://reddit.com/user/BlacksmithOk6202",
-            //     name: "BlacksmithOk6202"
-            // }
+            { type: "Free STL", url: "https://www.thingiverse.com/thing:6721785", name: "Armada_Legacy" }
         ]
     },
     {
