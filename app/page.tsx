@@ -18,7 +18,7 @@ export default function Home() {
                         <h1>About Legacy</h1>
 
                         <p className="text-lg">
-                            Armada Legacy is a collaborative effort to craft community expansions and rebalances for Star Wars: Armada that rival the quality of those produced by Fantasy Flight Games (FFG). It stands as a testament to the collective creativity and dedication of the Star Wars: Armada community. Born from a shared vision to create fun and interesting Armada content. We seek to grow the community through new exciting releases. Legacy recognizes the Armada Ruleset Collective (ARC), and will adapt Legacy content to ARC changes.
+                            Armada Legacy is a collaborative effort to craft community expansions and rebalances for Star Wars: Armada that rival the quality of those produced by Fantasy Flight Games (FFG). It stands as a testament to the collective creativity and dedication of the Star Wars: Armada community. Born from a shared vision to create fun and interesting Armada content. We seek to grow the community through new exciting releases.
                         </p>
                     </section>
 
@@ -37,13 +37,6 @@ export default function Home() {
                                 <AccordionTrigger>What is the difference between other Homebrew content and Armada Legacy? </AccordionTrigger>
                                 <AccordionContent className="text-lg">
                                     While some Homebrew content is great, it often lacks balance, thorough testing, and is difficult to weed through it all. Armada Legacy leverages a dedicated team, focused on developing balanced content through rigorous playtesting, constant re-evaluation, and community feedback. Consisting of tournament organizers, prior FFG/AMG play testers, prior world champions, and other skillful volunteers. We provide top tier content with play available on tabletop simulator, and a fleet builder with up to date Legacy content.
-                                </AccordionContent>
-                            </AccordionItem>
-
-                            <AccordionItem value="item-3">
-                                <AccordionTrigger>What is the difference between Legacy and ARC?</AccordionTrigger>
-                                <AccordionContent className="text-lg">
-                                    ARC will focus on rules interpretation, gameplay standards, and maintaining current rules standings for judges to leverage, including changes for gameplay health. Legacy creates content for unofficial play and will honor ARC changes to maintain game interoperability. Please see the ARC release statement for more information <a style={{ color: 'var(--logoColor)' }} href="https://www.reddit.com/r/StarWarsArmada/comments/1eniswp/introducing_arc_the_armada_ruleset_collective/">here</a>
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>
