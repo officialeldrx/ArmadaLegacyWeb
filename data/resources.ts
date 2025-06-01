@@ -103,6 +103,7 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/listing/1795724976/arquitens-cruiser",
                 name: "BensArmadaShipCards"
             },
+            { type: "Paid STL", url: "https://nomadprintworks.gumroad.com/l/archer", name: "Nomad Printworks" },
             { type: "Model", url: "https://www.etsy.com/listing/1437379079/aqruitens-light-cruiser-republic-empire?click_key=9e9a829682da4979c4d93943e070ae90bfc15134%3A1437379079&click_sum=0402db96&ref=shop_home_active_61&crt=1", name: "SabreWorkshop" }
         ],
     },
@@ -537,7 +538,8 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://pulsefiredgaming.etsy.com/listing/1804984203/rebel-sphyrna-class-hammerhead-corvette",
                 name: "Pulsefired Gaming"
-            }
+            },
+            { type: "Paid STL", url: "https://nomadprintworks.gumroad.com/l/hammerhawk", name: "Nomad Printworks" }
         ],
     },
     {
@@ -551,6 +553,7 @@ const resources: Entity[] = [
                 url: "https://www.thingiverse.com/thing:6674551",
                 name: "Armada Legacy",
             },
+            { type: "Model", url: "https://pulsefiredgaming.etsy.com/listing/1882989537", name: "Pulsefired Gaming" }
         ],
     },
     {
@@ -785,6 +788,7 @@ const resources: Entity[] = [
                 url: "https://only-games.co/products/armada-raider-corvette",
                 name: "Mel Miniatures"
             },
+            { type: "Paid STL", url: "https://nomadprintworks.gumroad.com/l/rebelraider", name: "Nomad Printworks" },
             { type: "Model", url: "https://www.etsy.com/listing/1739062936/imperial-raider-for-star-wars-armada?click_key=176a2c6ccf1f177c515ad78bffeb54d4ee58cfd0%3A1739062936&click_sum=d3887074&ref=shop_home_active_70&crt=1", name: "SabreWorkshop" }
         ],
     },
@@ -916,6 +920,7 @@ const resources: Entity[] = [
                 name: "Armada Legacy",
             },
             { type: "Model", url: "https://www.etsy.com/listing/1795712738/quasar-fire-cruiser", name: "BensArmadaShipCards" },
+            { type: "Paid STL", url: "https://nomadprintworks.gumroad.com/l/phoenix", name: "Nomad Printworks" },
             { type: "Model", url: "https://www.etsy.com/listing/1753598476/star-wars-armada-quasar-fire-cruiser?click_key=72771f955e6e4a5a72d0f53ace51d23e71dd61d8%3A1753598476&click_sum=a5b470a0&ref=shop_home_active_11&pro=1", name: "Cassie Renee Art" },
             { type: "Model", url: "https://www.etsy.com/listing/1401635783/quasar-fire-for-star-wars-armada?click_key=6e0d59ce253cf28fa866f56c9435c752cc9a19fb%3A1401635783&click_sum=df6f41bd&ref=shop_home_active_26&crt=1", name: "SabreWorkshop" }
         ],
@@ -1690,7 +1695,8 @@ const resources: Entity[] = [
                 type: "Model",
                 url: "https://only-games.co/products/armada-12x-e-wing?variant=45493204779235",
                 name: "Mel Miniatures"
-            }
+            },
+            { type: "Free STL", url: "https://www.thingiverse.com/thing:7038920", name: "TzarFenix" }
         ],
     },
     {
@@ -1847,6 +1853,11 @@ const resources: Entity[] = [
                 url: "https://www.etsy.com/shop/PetersabersWorkshop/",
                 name: "PetersabersWorkshop",
             },
+            {
+                type: "Card",
+                url: "https://www.etsy.com/listing/4312105265/armada-legacy-wave-0-expansion-cards-and",
+                name: "SpaceNavyIndustries"
+            },
             { type: "Card", url: "https://www.etsy.com/listing/1777693301/armada-objective-card-deck?click_key=bc7d32a8b1901a008a58139fdb9c2118303a51ea%3A1777693301&click_sum=58f5854c&ref=shop_home_active_6", name: "CloneWares - Objectives" },
             { type: "Card", url: "https://www.etsy.com/listing/1777779667/armada-damage-deck?click_key=b71f753b146820b9f7d78c941065b566573b9d15%3A1777779667&click_sum=bc6590f4&ref=shop_home_active_7", name: "CloneWares - Damage" }
         ],
@@ -1857,6 +1868,11 @@ const resources: Entity[] = [
         image: "https://i.etsystatic.com/22662247/r/il/219fe9/6060327466/il_570xN.6060327466_gg6j.jpg",
         description: "",
         items: [
+            {
+                type: "Product",
+                url: "https://www.etsy.com/listing/4312105265/armada-legacy-wave-0-expansion-cards-and",
+                name: "SpaceNavyIndustries"
+            },
             { type: "Free STL", url: "https://cults3d.com/en/3d-model/game/star-wars-armada-squadron-fdm-dial-tokens", name: "SpaceNavy" }
         ]
     },
@@ -1967,6 +1983,11 @@ const resources: Entity[] = [
         items: [
             {
                 type: "Free STL",
+                url: "https://makerworld.com/en/models/1053989-star-wars-armada-maneuvertool",
+                name: "Wobbleking",
+            },
+            {
+                type: "Free STL",
                 url: "https://www.thingiverse.com/thing:1840168",
                 name: "err404",
             },
@@ -1974,6 +1995,11 @@ const resources: Entity[] = [
                 type: "Product",
                 url: "https://www.etsy.com/listing/1720583296/star-wars-armada-maneuver-tool",
                 name: "BensArmadaShipCards",
+            },
+            {
+                type: "Product",
+                url: "https://www.etsy.com/listing/1904212161/ship-movement-tool-bundle-tater-insert",
+                name: "m3rc3Dforge"
             },
         ],
     },
@@ -2067,6 +2093,11 @@ const resources: Entity[] = [
                 type: "Free STL",
                 url: "https://www.thingiverse.com/thing:6029166",
                 name: "SirSamson"
+            },
+            {
+                type: "Free STL",
+                url: "https://cults3d.com/en/3d-model/game/star-wars-armada-fdm-printable-tools-tokens",
+                name: "SpaceNavy"
             },
             {
                 type: "Paid STL",
@@ -2206,6 +2237,74 @@ const resources: Entity[] = [
                 url: "https://pulsefiredgaming.etsy.com/listing/1791167768/rogue-yt-2400-light-freighter-irregular",
                 name: "Pulsefired Gaming"
             }
+        ]
+    },
+    {
+        name: "G9 Rigger",
+        category: "Squadron",
+        image: "https://i.redd.it/dof5xu59pv721.jpg",
+        items: [
+            {
+                type: "Free STL",
+                url: "https://www.thingiverse.com/thing:7054049",
+                name: "Armada Legacy"
+            },
+            {
+                type: "Product",
+                url: "https://www.etsy.com/listing/4313599529/armada-legacy-wave-0-reinforcement-pack",
+                name: "Pulsefired Gaming"
+            },
+        ]
+    },
+    {
+        name: "LAAT/i Gunship",
+        category: "Squadron",
+        image: "https://cdn.svc.asmodee.net/production-amgcom/uploads/image-converter/2022/07/SWZ70-Website-Image.webp",
+        items: [
+            {
+                type: "Free STL",
+                url: "https://www.thingiverse.com/thing:7054049",
+                name: "Armada Legacy"
+            },
+            {
+                type: "Product",
+                url: "https://www.etsy.com/listing/4313599529/armada-legacy-wave-0-reinforcement-pack",
+                name: "Pulsefired Gaming"
+            },
+        ]
+    },
+    {
+        name: "Star Courier",
+        category: "Squadron",
+        image: "https://i.ibb.co/kyYjPbr/Darth-Maul-Sith-Infiltrator-XW2.webp",
+        items: [
+            {
+                type: "Free STL",
+                url: "https://www.thingiverse.com/thing:7054049",
+                name: "Armada Legacy"
+            },
+            {
+                type: "Product",
+                url: "https://www.etsy.com/listing/4313599529/armada-legacy-wave-0-reinforcement-pack",
+                name: "Pulsefired Gaming"
+            },
+        ]
+    },
+    {
+        name: "HMP Droid Gunship",
+        category: "Squadron",
+        image: "https://static.wikia.nocookie.net/starwars/images/e/e9/OnderonOppressor-SWZ.png/revision/latest?cb=20200507010731",
+        items: [
+            {
+                type: "Free STL",
+                url: "https://www.thingiverse.com/thing:7054049",
+                name: "Armada Legacy"
+            },
+            {
+                type: "Product",
+                url: "https://www.etsy.com/listing/4313599529/armada-legacy-wave-0-reinforcement-pack",
+                name: "Pulsefired Gaming"
+            },
         ]
     },
     {
