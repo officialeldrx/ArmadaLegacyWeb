@@ -1074,25 +1074,6 @@ const resources: Entity[] = [
     //     },
     //   ],
     // },
-    // {
-    //   name: "Sith Infiltrator",
-    //   category: "Squadron",
-    //   faction: ["Separatist"],
-    //   image: "",
-    //   description: "",
-    //   items: [
-    //     {
-    //       type: "Model",
-    //       url: "https://www.etsy.com/listing/1326079471",
-    //       name: "WesJanson3D",
-    //     },
-    //     {
-    //       type: "Model",
-    //       url: "https://www.etsy.com/listing/1740495999",
-    //       name: "TheShipBuilder",
-    //     },
-    //   ],
-    // },
     {
         name: "Tri-fighter",
         category: "Squadron",
@@ -1311,49 +1292,6 @@ const resources: Entity[] = [
     //       {
     //         type: "Model",
     //         url: "https://www.etsy.com/listing/1568466620",
-    //         name: "TheShipBuilder",
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     name: "G9 Rigger",
-    //     category: "Squadron",
-    //     faction: ["Republic"],
-    //     image: "",
-    //     description: "",
-    //     items: [
-    //       {
-    //         type: "Model",
-    //         url: "https://www.etsy.com/listing/1568455888",
-    //         name: "TheShipBuilder",
-    //       },
-    //       {
-    //         type: "Model",
-    //         url: "https://www.etsy.com/listing/1676131705",
-    //         name: "SabreWorkshop",
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     name: "LAAT/i",
-    //     category: "Squadron",
-    //     faction: ["Republic"],
-    //     image: "",
-    //     description: "",
-    //     items: [
-    //       {
-    //         type: "Paid STL",
-    //         url: "https://resinengine.com/product/laat-atmo-space-stl/",
-    //         name: "Ethan LeRoith",
-    //       },
-    //       {
-    //         type: "Model",
-    //         url: "https://www.etsy.com/listing/1671769964",
-    //         name: "Pulsefired Gaming",
-    //       },
-    //       {
-    //         type: "Model",
-    //         url: "https://www.etsy.com/listing/1585145949",
     //         name: "TheShipBuilder",
     //       },
     //     ],
@@ -1868,7 +1806,7 @@ const resources: Entity[] = [
         ],
     },
     {
-        name: "Squadron Base Tokens",
+        name: "Squadron Disks",
         category: "Play Material",
         image: "https://i.etsystatic.com/22662247/r/il/219fe9/6060327466/il_570xN.6060327466_gg6j.jpg",
         description: "",
@@ -2255,9 +2193,19 @@ const resources: Entity[] = [
                 name: "Armada Legacy"
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/4313599529/armada-legacy-wave-0-reinforcement-pack",
                 name: "Pulsefired Gaming"
+            },
+            {
+                type: "Model",
+                url: "https://www.etsy.com/listing/1568455888",
+                name: "TheShipBuilder",
+            },
+            {
+                type: "Model",
+                url: "https://www.etsy.com/listing/1676131705",
+                name: "SabreWorkshop",
             },
         ]
     },
@@ -2272,9 +2220,24 @@ const resources: Entity[] = [
                 name: "Armada Legacy"
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/4313599529/armada-legacy-wave-0-reinforcement-pack",
                 name: "Pulsefired Gaming"
+            },
+            {
+                type: "Paid STL",
+                url: "https://resinengine.com/product/laat-atmo-space-stl/",
+                name: "Ethan LeRoith",
+            },
+            {
+                type: "Model",
+                url: "https://www.etsy.com/listing/1671769964",
+                name: "Pulsefired Gaming",
+            },
+            {
+                type: "Model",
+                url: "https://www.etsy.com/listing/1585145949",
+                name: "TheShipBuilder",
             },
         ]
     },
@@ -2289,16 +2252,26 @@ const resources: Entity[] = [
                 name: "Armada Legacy"
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/4313599529/armada-legacy-wave-0-reinforcement-pack",
                 name: "Pulsefired Gaming"
+            },
+            {
+                type: "Model",
+                url: "https://www.etsy.com/listing/1326079471",
+                name: "WesJanson3D",
+            },
+            {
+                type: "Model",
+                url: "https://www.etsy.com/listing/1740495999",
+                name: "TheShipBuilder",
             },
         ]
     },
     {
         name: "HMP Droid Gunship",
         category: "Squadron",
-        image: "https://static.wikia.nocookie.net/starwars/images/e/e9/OnderonOppressor-SWZ.png/revision/latest?cb=20200507010731",
+        image: "https://cdna.artstation.com/p/assets/images/images/026/393/236/large/mariusz-gandzel-heavyoppressor.jpg?1588668138",
         items: [
             {
                 type: "Free STL",
@@ -2306,9 +2279,24 @@ const resources: Entity[] = [
                 name: "Armada Legacy"
             },
             {
-                type: "Product",
+                type: "Model",
                 url: "https://www.etsy.com/listing/4313599529/armada-legacy-wave-0-reinforcement-pack",
                 name: "Pulsefired Gaming"
+            },
+            {
+                type: "Free STL",
+                url: "https://www.thingiverse.com/thing:5365444",
+                name: "RVBLegend",
+            },
+            {
+                type: "Model",
+                url: "https://www.etsy.com/listing/1568404510",
+                name: "TheShipBuilder",
+            },
+            {
+                type: "Model",
+                url: "https://www.etsy.com/listing/1563569242",
+                name: "SabreWorkshop",
             },
         ]
     },
@@ -2399,7 +2387,7 @@ const resources: Entity[] = [
     {
         name: "HWK-290",
         category: "Squadron",
-        image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a686adef-a30d-4e01-a848-e061b4ee28f7/dbuhwwz-623128aa-4460-4b82-8f91-2eac88bcd6f2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E2ODZhZGVmLWEzMGQtNGUwMS1hODQ4LWUwNjFiNGVlMjhmN1wvZGJ1aHd3ei02MjMxMjhhYS00NDYwLTRiODItOGY5MS0yZWFjODhiY2Q2ZjIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wkwEAFRKz6NpZcovwWMqUYcQOq2CfkV9aUARvpTmpZE",
+        image: "https://64.media.tumblr.com/f856e19fe3f1adff7d71e589d8f1516e/623484ab41aff77a-b0/s1280x1920/365a398cb0eae0218f92452433058f4feaffa936.jpg",
         items: [
             {
                 type: "Model",
