@@ -10,8 +10,8 @@ import { Trash2, RotateCcw, Plus, Eye, RefreshCw, Pencil, X, Check } from 'lucid
 import { useCardGame, Card as GameCard } from '@/hooks/useCardGame';
 import { FaceDownCardsDialog } from '@/components/FaceDownCardsDialog';
 import { PeekTopCardsDialog } from '@/components/PeekTopCardsDialog';
-import { FaceUpIcon } from '@/components/FaceUpIcon';
-import { FaceDownIcon } from '@/components/FaceDownIcon';
+import { CritIcon } from '@/components/CritIcon';
+import { DamageIcon } from '@/components/DamageIcon';
 
 export default function CardGame() {
     const {
@@ -260,11 +260,11 @@ export default function CardGame() {
 
                         <div className="flex gap-2 mt-4">
                             <Button variant="outline" onClick={() => addCard(section.id, false)} className='w-full'>
-                                <FaceDownIcon className="h-6 w-6 mr-2" />
+                                <DamageIcon className="h-6 w-6 mr-2" />
                             </Button>
 
                             <Button variant="destructive" onClick={() => addCard(section.id, true)} className='shadow w-full'>
-                                <FaceUpIcon className="h-6 w-6 mr-2" />
+                                <CritIcon className="h-6 w-6 mr-2" />
                             </Button>
 
                             {isGeneralDodonna && (
