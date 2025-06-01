@@ -2,7 +2,7 @@ type Faction = "Empire" | "Republic" | "Separatist" | "Rebel";
 type Category = "Ship" | "Squadron" | "Play Material" | "Service";
 
 interface Item {
-    type: "Free STL" | "Paid STL" | "Model" | "Card" | "Base Token" | "Product";
+    type: "Free STL" | "Paid STL" | "Model" | "Card" | "Base Token" | "Product" | "Free Prints";
     url: string;
     name: string;
 }
@@ -1843,6 +1843,11 @@ const resources: Entity[] = [
         image: "https://images-cdn.fantasyflightgames.com/filer_public/3a/e9/3ae953ab-b569-4862-8be6-35d850aca14b/swm38-box-left500.png",
         description: "",
         items: [
+            {
+                type: "Free Prints",
+                url: "https://star-forge.tools/",
+                name: "Star Forge",
+            },
             {
                 type: "Card",
                 url: "https://www.etsy.com/shop/BensArmadaShipCards",
